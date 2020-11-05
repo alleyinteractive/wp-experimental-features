@@ -18,4 +18,5 @@ namespace Experimental_Features;
 require_once __DIR__ . '/autoloader.php';
 
 // Initialize functionality.
+Filter::init();
 Options::init();
