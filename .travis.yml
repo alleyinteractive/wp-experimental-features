@@ -1,0 +1,58 @@
+# Travis CI (MIT License) configuration file for Experimental Features
+# @link https://travis-ci.org/
+
+# Bionic image has PHP versions 7.1,7.2,7.3 pre-installed
+dist: bionic
+
+# Bionic does not start mysql or memcached by default
+services:
+  - mysql
+  - memcached
+
+# Declare project language.
+# @link http://about.travis-ci.org/docs/user/languages/php/
+language: php
+
+# PHP version.
+php:
+  - '7.3'
+
+# Specify when Travis should build.
+branches:
+  only:
+    - main
+
+cache:
+  directories:
+    - $HOME/.config/composer/cache
+
+# Git clone depth.
+git:
+  depth: 1
+  quiet: true
+
+matrix:
+  fast_finish: true
+
+  include:
+    - env: WP_VERSION=latest PHP_LINT=1
+    - env: WP_VERSION=latest WP_PHPCS=1 WP_TRAVIS_OBJECT_CACHE=1
+    - env: WP_VERSION=trunk
+
+# Prepare your build for testing.
+# Failures in this section will result in build status 'errored'.
+before_script:
+  - bash bin/before-script.sh
+
+# Run test script commands.
+# Default is specific to project language.
+# All commands must exit with code 0 on success. Anything else is considered failure.
+script:
+  - bash bin/script-php-lint.sh
+  - bash bin/script-phpcs.sh
+  - bash bin/script-phpunit.sh
+
+# Receive notifications for build results.
+# @link http://docs.travis-ci.com/user/notifications/#Email-notifications
+notifications:
+  email: false
