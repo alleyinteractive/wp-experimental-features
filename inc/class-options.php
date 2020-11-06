@@ -29,7 +29,7 @@ class Options {
 		add_settings_section(
 			'experimental_features_config_section',
 			esc_html__( 'Experimental Features Configuration', 'experimental-features' ),
-			null,
+			'__return_null',
 			'experimental_features_config_options'
 		);
 
@@ -126,11 +126,10 @@ class Options {
 	/**
 	 * Sanitizes an array of feature flags.
 	 *
-	 * @param array $option_value The array of feature flag slugs to sanitize.
-	 *
+	 * @param ?array $option_value The array of feature flag slugs to sanitize.
 	 * @return array The sanitized array.
 	 */
-	public static function sanitize_flags( ?array $option_value ) : array {
+	public static function sanitize_flags( ?array $option_value ): array {
 		return array_map( 'sanitize_text_field', null === $option_value ? [] : $option_value );
 	}
 }

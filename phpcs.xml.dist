@@ -18,20 +18,13 @@
     <!-- Check up to 20 files simultaneously. -->
     <arg name="parallel" value="20"/>
 
-    <!-- Only check the PHP files. -->
-    <arg name="extensions" value="php" />
-
     <!-- Set severity to 1 to see everything that isn't effectively turned off. -->
     <arg name="severity" value="1" />
 
     <!-- Check all files in this directory and the directories below it. -->
     <file>.</file>
 
-    <rule ref="WordPress" />
-    <rule ref="WordPress-VIP-Go" />
-
-    <!-- The version set here matches the minimum version tested in .travis.yml.  -->
-    <config name="minimum_supported_wp_version" value="5.5.1" />
+    <rule ref="Alley-Interactive" />
 
     <rule ref="WordPress.WP.I18n">
         <properties>
@@ -51,10 +44,6 @@
                 <element value="experimental_features" />
             </property>
         </properties>
-    </rule>
-
-    <rule ref="Generic.Arrays.DisallowShortArraySyntax.Found">
-        <severity>0</severity>
     </rule>
 
     <!-- Turn off a few rules for partials. $args are passed in from the parent context, and they are scoped to a function, so these don't apply. -->

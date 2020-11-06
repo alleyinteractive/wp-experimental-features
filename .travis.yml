@@ -58,7 +58,7 @@ before_script:
   # Maybe set up phpcs.
   - |
     if [[ -n "${WP_PHPCS}" ]]; then
-      composer g require --dev automattic/vipwpcs dealerdirect/phpcodesniffer-composer-installer
+      composer g require --dev alleyinteractive/alley-coding-standards
     fi
 
   # Maybe set up the object cache.

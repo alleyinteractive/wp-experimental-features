@@ -23,9 +23,7 @@ function filter_experimental_features_flags( array $flags ) : array {
 }
 add_filter(
 	'experimental_features_flags',
-	__NAMESPACE__ . '\filter_experimental_features_flags',
-	10,
-	1
+	__NAMESPACE__ . '\filter_experimental_features_flags'
 );
 ``` 
 
@@ -47,3 +45,10 @@ $is_enabled = apply_filters(
 If the flag is not enabled, or if the Experimental Features plugin is not
 active, then the default value (first parameter, `false` in the example above)
 will be returned.
+
+### Toggling Feature Flags in the Admin
+
+If you navigate to Settings > Experimental Features while logged in to the
+WordPress admin as an administrator (or a user with the `manage_options` 
+capability) you can turn feature flags on and off via a simple checkbox 
+interface.

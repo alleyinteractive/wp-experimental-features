@@ -18,7 +18,7 @@ class Filter {
 	 *
 	 * @return string The capability required to turn experimental features on and off. Defaults to `manage_options`.
 	 */
-	public static function capability() : string {
+	public static function capability(): string {
 		/**
 		 * Filters the capability required to turn experimental features on and off.
 		 *
@@ -35,10 +35,9 @@ class Filter {
 	 *
 	 * @param bool   $default The default value for the feature flag. Typically, this is false.
 	 * @param string $slug    The feature flag slug to look up.
-	 *
 	 * @return bool Whether the given feature flag is active or not.
 	 */
-	public static function filter_experimental_features_flag( bool $default, string $slug ) : bool {
+	public static function filter_experimental_features_flag( bool $default, string $slug ): bool {
 		$option_value = get_option( 'experimental_features_flags', [] );
 
 		return ! empty( $option_value )
@@ -53,7 +52,7 @@ class Filter {
 	 *
 	 * @return array The available feature flags.
 	 */
-	public static function flags() : array {
+	public static function flags(): array {
 		/**
 		 * Filters the available feature flags.
 		 *
