@@ -13,10 +13,9 @@ Feature flags are defined using a filter:
  * Define available feature flags.
  *
  * @param array $flags Feature flags that have been defined for the Experimental Features plugin.
- *
  * @return array The modified list of feature flags.
  */
-function filter_experimental_features_flags( array $flags ) : array {
+function filter_experimental_features_flags( array $flags ): array {
 	$flags['my-cool-feature'] = __( 'My Cool Feature', 'my-textdomain' );
 
 	return $flags;
@@ -45,6 +44,25 @@ $is_enabled = apply_filters(
 If the flag is not enabled, or if the Experimental Features plugin is not
 active, then the default value (first parameter, `false` in the example above)
 will be returned.
+
+If you like, you could create a helper function for this in your plugin or
+theme:
+
+```php
+/**
+ * A helper function for determining if a feature flag is enabled.
+ *
+ * @param string $slug The feature flag slug to check.
+ * @return bool True if enabled, false if not.
+ */
+function my_theme_flag_enabled( string $slug ): bool {
+	return apply_filters( 
+		'experimental_features_flag',
+		false,
+		$slug
+	);
+}
+```
 
 ### Toggling Feature Flags in the Admin
 
