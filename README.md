@@ -1,5 +1,5 @@
 # Experimental Features
-A WordPress plugin that creates a feature flags system for beta testing 
+A WordPress plugin that creates a feature flags system for beta testing
 experimental features in your themes or plugins.
 
 ## Usage
@@ -12,10 +12,12 @@ Feature flags are defined using a filter:
 /**
  * Define available feature flags.
  *
+ * @since 5.4.2
+ *
  * @param array $flags Feature flags that have been defined for the Experimental Features plugin.
  * @return array The modified list of feature flags.
  */
-function filter_experimental_features_flags( array $flags ): array {
+function filter_experimental_features_flags( $flags ): array {
 	$flags['my-cool-feature'] = __( 'My Cool Feature', 'my-textdomain' );
 
 	return $flags;
@@ -24,7 +26,7 @@ add_filter(
 	'experimental_features_flags',
 	__NAMESPACE__ . '\filter_experimental_features_flags'
 );
-``` 
+```
 
 ### Checking the Value of Feature Flags
 
@@ -34,7 +36,7 @@ themes to not break if the Experimental Features plugin is deactivated,
 because the filter will simply return the default value.
 
 ```php
-$is_enabled = apply_filters( 
+$is_enabled = apply_filters(
 	'experimental_features_flag',
 	false,
 	'my-cool-feature'
@@ -56,7 +58,7 @@ theme:
  * @return bool True if enabled, false if not.
  */
 function my_theme_flag_enabled( string $slug ): bool {
-	return apply_filters( 
+	return (bool) apply_filters(
 		'experimental_features_flag',
 		false,
 		$slug
@@ -67,6 +69,6 @@ function my_theme_flag_enabled( string $slug ): bool {
 ### Toggling Feature Flags in the Admin
 
 If you navigate to Settings > Experimental Features while logged in to the
-WordPress admin as an administrator (or a user with the `manage_options` 
-capability) you can turn feature flags on and off via a simple checkbox 
+WordPress admin as an administrator (or a user with the `manage_options`
+capability) you can turn feature flags on and off via a simple checkbox
 interface.
