@@ -83,6 +83,11 @@ class Options {
 			'admin_menu',
 			[ self::class, 'action_admin_menu' ]
 		);
+
+		add_action(
+			'admin_init',
+			[ self::class, 'register_admin_bar_menu' ]
+		);
 	}
 
 	/**
@@ -131,5 +136,92 @@ class Options {
 	 */
 	public static function sanitize_flags( ?array $option_value ): array {
 		return array_map( 'sanitize_text_field', null === $option_value ? [] : $option_value );
+	}
+
+	/**
+	 * Register the admin bar menu.
+	 */
+	public static function register_admin_bar_menu() {
+		if ( ! static::should_include_admin_bar() ) {
+			return;
+		}
+
+		self::handle_toggle_request();
+
+		add_action(
+			'admin_bar_menu',
+			[ self::class, 'action_admin_bar_menu' ],
+			200
+		);
+	}
+
+	/**
+	 * Determine if the admin bar should be included.
+	 *
+	 * @return bool
+	 */
+	public static function should_include_admin_bar(): bool {
+		return (bool) apply_filters( 'experimental_features_admin_bar', current_user_can( Filter::capability() ) );
+	}
+
+	/**
+	 * Handle the request to toggle a feature via the admin bar.
+	 */
+	public static function handle_toggle_request() {
+		if ( empty( $_GET['experimental-feature-toggle'] ) || empty( $_GET['experimental-feature-nonce'] ) ) {
+			return;
+		}
+
+		check_admin_referer( 'experimental-features', 'experimental-feature-nonce', 'experimental-features' );
+
+		Filter::toggle_flag( sanitize_text_field( wp_unslash( $_GET['experimental-feature-toggle'] ) ) );
+	}
+
+	/**
+	 * Register the admin bar toggle switches.
+	 */
+	public static function action_admin_bar_menu() {
+		global $wp_admin_bar;
+
+		$features = Filter::flags();
+
+		if ( empty( $features ) ) {
+			return;
+		}
+
+    $wp_admin_bar->add_menu(
+			[
+				'href'  => admin_url( 'options-general.php?page=experimental-features' ),
+				'id'    => 'experimental-features',
+				'title' => __( '🧪 Experimental Features', 'experimental-features' )
+			]
+		);
+
+		$nonce = wp_create_nonce( 'experimental-features' );
+
+		foreach ( $features as $feature => $label ) {
+			$enabled = Filter::filter_experimental_features_flag( false, $feature );
+
+			$wp_admin_bar->add_menu(
+				[
+					'href'   => add_query_arg(
+						[
+							'experimental-feature-nonce'  => $nonce,
+							'experimental-feature-toggle' => $feature,
+						]
+					),
+					'id'     => "experimental-features-{$feature}",
+					'parent' => 'experimental-features',
+					'title'  => sprintf(
+						$enabled
+							/* translators: feature name */
+							? __( '✅ Disable "%s"', 'experimental-features' )
+							/* translators: feature name */
+							: __( '❌ Enable "%s"', 'experimental-features' ),
+						$label
+					),
+				]
+			);
+		}
 	}
 }
