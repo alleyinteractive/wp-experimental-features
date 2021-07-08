@@ -161,7 +161,7 @@ class Options {
 	 * @return bool
 	 */
 	public static function should_include_admin_bar(): bool {
-		return (bool) apply_filters( 'experimental_features_admin_bar', current_user_can( Filter::capability() ) );
+		return (bool) apply_filters( 'experimental_features_show_admin_bar', current_user_can( Filter::capability() ) );
 	}
 
 	/**
