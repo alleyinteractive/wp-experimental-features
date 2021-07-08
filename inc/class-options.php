@@ -189,7 +189,7 @@ class Options {
 			return;
 		}
 
-    $wp_admin_bar->add_menu(
+		$wp_admin_bar->add_menu(
 			[
 				'href'  => admin_url( 'options-general.php?page=experimental-features' ),
 				'id'    => 'experimental-features',
