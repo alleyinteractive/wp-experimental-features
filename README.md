@@ -72,3 +72,13 @@ If you navigate to Settings > Experimental Features while logged in to the
 WordPress admin as an administrator (or a user with the `manage_options`
 capability) you can turn feature flags on and off via a simple checkbox
 interface.
+
+### Toggling Feature Flags in the Admin Bar
+
+By default the admin bar will include links to toggle all available feature flags individually. This can be turned off using a filter:
+
+```php
+add_action( 'experimental_features_show_admin_bar', '__return_false' )
+```
+
+<img width="612" alt="Screen Shot 2021-07-08 at 4 55 08 PM" src="https://user-images.githubusercontent.com/346399/124989614-4b73a980-e00d-11eb-9e67-e1d4e46f4778.png">
