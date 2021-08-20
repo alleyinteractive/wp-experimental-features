@@ -85,7 +85,7 @@ class Options {
 		);
 
 		add_action(
-			'admin_init',
+			'init',
 			[ self::class, 'register_admin_bar_menu' ]
 		);
 	}
