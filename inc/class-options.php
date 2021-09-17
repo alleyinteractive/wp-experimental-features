@@ -168,13 +168,34 @@ class Options {
 	 * Handle the request to toggle a feature via the admin bar.
 	 */
 	public static function handle_toggle_request() {
-		if ( empty( $_GET['experimental-feature-toggle'] ) || empty( $_GET['experimental-feature-nonce'] ) ) {
+		if ( empty( $_GET['experimental-feature-nonce'] ) ) {
 			return;
 		}
 
 		check_admin_referer( 'experimental-features', 'experimental-feature-nonce', 'experimental-features' );
 
-		Filter::toggle_flag( sanitize_text_field( wp_unslash( $_GET['experimental-feature-toggle'] ) ) );
+		$disabled = false;
+		$enabled  = false;
+
+		if ( ! empty( $_GET['experimental-feature-enable'] ) ) {
+			$enabled = Filter::enable_flag( sanitize_text_field( wp_unslash( $_GET['experimental-feature-enable'] ) ) );
+		} elseif ( ! empty( $_GET['experimental-feature-disable'] ) ) {
+			$disabled = Filter::disable_flag( sanitize_text_field( wp_unslash( $_GET['experimental-feature-disable'] ) ) );
+		}
+
+		if ( $disabled || $enabled ) {
+			add_action(
+				'admin_notices',
+				function () use ( $enabled ) {
+					printf(
+						'<div class="notice notice-success"><p>%s</p></div>',
+						$enabled
+							? esc_html__( 'Feature flag enabled.', 'experimental-features' )
+							: esc_html__( 'Feature flag disabled.', 'experimental-features' )
+					);
+				}
+			);
+		}
 	}
 
 	/**
@@ -205,10 +226,22 @@ class Options {
 			$wp_admin_bar->add_menu(
 				[
 					'href'   => add_query_arg(
-						[
-							'experimental-feature-nonce'  => $nonce,
-							'experimental-feature-toggle' => $feature,
-						]
+						array_merge(
+							[
+								'experimental-feature-nonce'  => $nonce,
+							],
+							// Include the flag to enable/disable the feature with the
+							// opposite switch set to null so it is potentially removed from
+							// the current URL.
+							! $enabled ? [
+								'experimental-feature-disable' => null,
+								'experimental-feature-enable'  => $feature,
+								] : [],
+							$enabled ? [
+								'experimental-feature-disable' => $feature,
+								'experimental-feature-enable'  => null,
+							] : [],
+						),
 					),
 					'id'     => "experimental-features-{$feature}",
 					'parent' => 'experimental-features',
