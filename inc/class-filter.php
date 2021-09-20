@@ -66,6 +66,88 @@ class Filter {
 	}
 
 	/**
+	 * Enable the status of a feature flag.
+	 *
+	 * @param string $flag Flag to toggle.
+	 * @return bool|null Boolean if the flag was updated (or failed to update), null otherwise.
+	 */
+	public static function enable_flag( string $flag ): ?bool {
+		$flags = static::flags();
+
+		if ( ! isset( $flags[ $flag ] ) ) {
+			return false;
+		}
+
+		$setting = get_option( 'experimental_features_flags', [] );
+
+		if ( ! in_array( $flag, $setting, true ) ) {
+			$setting[] = $flag;
+
+			return (bool) update_option( 'experimental_features_flags', $setting );
+		}
+
+		return null;
+	}
+
+	/**
+	 * Disable the status of a feature flag.
+	 *
+	 * @param string $flag Flag to toggle.
+	 * @return bool|null Boolean if the flag was updated (or failed to update), null otherwise.
+	 */
+	public static function disable_flag( string $flag ): ?bool {
+		$flags = static::flags();
+
+		if ( ! isset( $flags[ $flag ] ) ) {
+			return false;
+		}
+
+		$setting = get_option( 'experimental_features_flags', [] );
+
+		if ( in_array( $flag, $setting, true ) ) {
+			$setting = array_diff(
+				$setting,
+				[
+					$flag,
+				]
+			);
+
+			return (bool) update_option( 'experimental_features_flags', $setting );
+		}
+
+		return null;
+	}
+
+	/**
+	 * Toggle the status of a feature flag.
+	 *
+	 * @param string $flag Flag to toggle.
+	 * @return bool
+	 */
+	public static function toggle_flag( string $flag ): bool {
+		$flags = static::flags();
+
+		if ( ! isset( $flags[ $flag ] ) ) {
+			return false;
+		}
+
+		$setting = get_option( 'experimental_features_flags', [] );
+
+		if ( in_array( $flag, $setting, true ) ) {
+			$setting = array_diff(
+				$setting,
+				[
+					$flag,
+				]
+			);
+		} else {
+			$setting[] = $flag;
+		}
+
+		return (bool) update_option( 'experimental_features_flags', $setting );
+	}
+
+	/**
 	 * Initializes functionality by setting up action and filter hooks.
 	 */
 	public static function init() {
