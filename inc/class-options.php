@@ -200,6 +200,8 @@ class Options {
 
 	/**
 	 * Register the admin bar toggle switches.
+	 * 
+	 * @global WP_Admin_Bar $wp_admin_bar.
 	 */
 	public static function action_admin_bar_menu() {
 		global $wp_admin_bar;
