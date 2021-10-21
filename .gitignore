@@ -1,11 +1,23 @@
-# Temporary OS files
+# Dependencies
+vendor
+
+# Log files
+*.log
+
+# Cache files
+.phpcs/*.json
+.phpunit.result.cache
+
+# Ignore temporary OS files
 .DS_Store
 .DS_Store?
 .Spotlight-V100
 .Trashes
 ehthumbs.db
 Thumbs.db
+.thumbsdb
 
-# IDEs
+# IDE files
+*.code-workspace
 .idea
 .vscode

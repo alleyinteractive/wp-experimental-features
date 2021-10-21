@@ -187,11 +187,12 @@ class Options {
 			add_action(
 				'admin_notices',
 				function () use ( $enabled ) {
+					$message = $enabled
+						? __( 'Feature flag enabled.', 'experimental-features' )
+						: __( 'Feature flag disabled.', 'experimental-features' );
 					printf(
 						'<div class="notice notice-success"><p>%s</p></div>',
-						$enabled
-							? esc_html__( 'Feature flag enabled.', 'experimental-features' )
-							: esc_html__( 'Feature flag disabled.', 'experimental-features' )
+						esc_html( $message )
 					);
 				}
 			);
@@ -200,7 +201,7 @@ class Options {
 
 	/**
 	 * Register the admin bar toggle switches.
-	 * 
+	 *
 	 * @global WP_Admin_Bar $wp_admin_bar.
 	 */
 	public static function action_admin_bar_menu() {
@@ -216,7 +217,7 @@ class Options {
 			[
 				'href'  => admin_url( 'options-general.php?page=experimental-features' ),
 				'id'    => 'experimental-features',
-				'title' => __( '🧪 Experimental Features', 'experimental-features' )
+				'title' => __( '🧪 Experimental Features', 'experimental-features' ),
 			]
 		);
 
@@ -238,7 +239,7 @@ class Options {
 							! $enabled ? [
 								'experimental-feature-disable' => null,
 								'experimental-feature-enable'  => $feature,
-								] : [],
+							] : [],
 							$enabled ? [
 								'experimental-feature-disable' => $feature,
 								'experimental-feature-enable'  => null,
