@@ -12,9 +12,8 @@ Feature flags are defined using a filter:
 /**
  * Define available feature flags.
  *
- * @since 5.4.2
- *
  * @param array $flags Feature flags that have been defined for the Experimental Features plugin.
+ *
  * @return array The modified list of feature flags.
  */
 function filter_experimental_features_flags( $flags ): array {
@@ -55,6 +54,7 @@ theme:
  * A helper function for determining if a feature flag is enabled.
  *
  * @param string $slug The feature flag slug to check.
+ *
  * @return bool True if enabled, false if not.
  */
 function my_theme_flag_enabled( string $slug ): bool {
