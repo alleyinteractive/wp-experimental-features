@@ -39,4 +39,18 @@ class Test_Filter extends Framework_Test_Case {
 		// Ensure the value of the feature flag is `true` after it is activated.
 		$this->assertTrue( apply_filters( 'experimental_features_flag', false, 'my-cool-feature' ) );
 	}
+
+	public function test_feature_flag_hooks() {
+		$this->expectApplied( 'experimental_features_flag' );
+
+		$this->expectApplied( 'experimental_features_flag_enabled_new-feature' )->once();
+		$this->expectApplied( 'experimental_features_flag_disabled_new-feature' )->once();
+
+		// Update the active flags multiple times to ensure the hooks are only fired once.
+		update_option( 'experimental_features_flags', [ 'new-feature' ] );
+		update_option( 'experimental_features_flags', [ 'new-feature' ] );
+
+		update_option( 'experimental_features_flags', [ 'another-feature' ] );
+		update_option( 'experimental_features_flags', [ 'another-feature' ] );
+	}
 }

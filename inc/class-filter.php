@@ -54,7 +54,7 @@ class Filter {
 	 * @param mixed $value New value.
 	 * @return void
 	 */
-	public function filter_option_updated( $old_value, $value ) {
+	public static function filter_option_updated( $old_value, $value ) {
 		$enabled  = array_diff( (array) $value, (array) $old_value );
 		$disabled = array_diff( (array) $old_value, (array) $value );
 
