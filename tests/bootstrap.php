@@ -28,6 +28,8 @@ function experimental_features_manually_load_environment() {
 	require_once dirname( __DIR__ ) . '/wp-experimental-features.php';
 }
 
-\Mantle\Testing\install( function() {
-	tests_add_filter( 'muplugins_loaded', 'experimental_features_manually_load_environment' );
-} );
+\Mantle\Testing\install(
+	function() {
+		tests_add_filter( 'muplugins_loaded', 'experimental_features_manually_load_environment' );
+	} 
+);
