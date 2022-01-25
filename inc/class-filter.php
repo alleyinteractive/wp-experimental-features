@@ -48,6 +48,46 @@ class Filter {
 	}
 
 	/**
+	 * Fire helpful actions when an experimental feature is enabled or disabled.
+	 *
+	 * @param mixed $old_value Old value.
+	 * @param mixed $value New value.
+	 * @return void
+	 */
+	public function filter_option_updated( $old_value, $value ) {
+		$enabled  = array_diff( (array) $value, (array) $old_value );
+		$disabled = array_diff( (array) $old_value, (array) $value );
+
+		if ( ! empty( $enabled ) || ! empty( $disabled ) ) {
+			/**
+			 * Fired whenever any feature flag is enabled or disabled.
+			 *
+			 * @param string[] $enabled Feature flags that were enabled.
+			 * @param string[] $disabled Feature flags that were disabled.
+			 */
+			do_action( 'experimental_features_flags_updated', $enabled, $disabled );
+		}
+
+		if ( ! empty( $enabled ) ) {
+			foreach ( $enabled as $flag ) {
+				/**
+				 * Fired whenever a specific feature flag is enabled.
+				 */
+				do_action( "experimental_features_flag_enabled_{$flag}" );
+			}
+		}
+
+		if ( ! empty( $disabled ) ) {
+			foreach ( $disabled as $flag ) {
+				/**
+				 * Fired whenever a specific feature flag is disabled.
+				 */
+				do_action( "experimental_features_flag_disabled_{$flag}" );
+			}
+		}
+	}
+
+	/**
 	 * Defines a filter function for the available feature flags.
 	 *
 	 * @return array The available feature flags.
@@ -156,6 +196,13 @@ class Filter {
 			[ self::class, 'filter_experimental_features_flag' ],
 			10,
 			2
+		);
+
+		add_action(
+			'update_option_experimental_features_flags',
+			[ static::class, 'filter_option_updated' ],
+			10,
+			2,
 		);
 	}
 }
