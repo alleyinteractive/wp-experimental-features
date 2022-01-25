@@ -8,7 +8,7 @@
 
 namespace Experimental_Features;
 
-use WP_UnitTestCase;
+use Mantle\Testing\Framework_Test_Case;
 
 /**
  * A class to test the functionality of the Filter class.
@@ -16,7 +16,7 @@ use WP_UnitTestCase;
  * @package Experimental_Features
  * @subpackage Tests
  */
-class Test_Filter extends WP_UnitTestCase {
+class Test_Filter extends Framework_Test_Case {
 	/**
 	 * Test the process of defining a filter flag and retrieving its value.
 	 */

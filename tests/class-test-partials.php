@@ -8,7 +8,9 @@
 
 namespace Experimental_Features;
 
-use WP_UnitTestCase;
+use Mantle\Testing\Framework_Test_Case;
+
+require_once ABSPATH . 'wp-admin/includes/admin.php';
 
 /**
  * A class to test the functionality of the Partials class.
@@ -16,7 +18,7 @@ use WP_UnitTestCase;
  * @package Experimental_Features
  * @subpackage Tests
  */
-class Test_Partials extends WP_UnitTestCase {
+class Test_Partials extends Framework_Test_Case {
 
 	/**
 	 * Tests loading a partial.
