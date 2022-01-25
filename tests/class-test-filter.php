@@ -44,7 +44,7 @@ class Test_Filter extends Framework_Test_Case {
 	 * Test the hooks fired when activating and deactivating a feature flag.
 	 */
 	public function test_feature_flag_hooks() {
-		$this->expectApplied( 'experimental_features_flag' );
+		$this->expectApplied( 'experimental_features_flags_updated' )->twice();
 
 		$this->expectApplied( 'experimental_features_flag_enabled_new-feature' )->once();
 		$this->expectApplied( 'experimental_features_flag_disabled_new-feature' )->once();
