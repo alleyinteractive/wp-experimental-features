@@ -82,3 +82,32 @@ add_action( 'experimental_features_show_admin_bar', '__return_false' )
 ```
 
 <img width="612" alt="Screen Shot 2021-07-08 at 4 55 08 PM" src="https://user-images.githubusercontent.com/346399/124989614-4b73a980-e00d-11eb-9e67-e1d4e46f4778.png">
+
+### Listening for Flag Changes
+
+WordPress actions are fired when flags are enabled/disabled.
+
+#### On Any Flag Update
+
+```php
+add_action(
+	'experimental_features_flags_updated',
+	function( $enabled, $disabled ) {
+		// ...
+	},
+	10,
+	2,
+);
+```
+
+#### When a Specific Flag is Enabled
+
+```php
+add_action( 'experimental_features_flag_enabled_{feature-flag}', function() { ... } );
+```
+
+#### When a Specific Flag is Disabled
+
+```php
+add_action( 'experimental_features_flag_disabled_{feature-flag}', function() { ... } );
+```
