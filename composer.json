@@ -1,11 +1,12 @@
 {
   "authors": [
     {
-      "name": "Alley Interactive",
-      "email": "noreply@alleyinteractive.com"
+      "name": "Alley",
+      "homepage": "https://alley.co/"
     }
   ],
   "description": "WP Experimental Features",
+  "homepage": "https://github.com/alleyinteractive/wp-experimental-features",
   "license": "GPL-2.0-or-later",
   "name": "alleyinteractive/wp-experimental-features",
   "require-dev": {
@@ -18,5 +19,9 @@
     "phpcs": "phpcs . --runtime-set text_domain experimental-features --runtime-set prefixes experimental_features",
     "phpunit": "phpunit"
   },
-  "type": "project"
+  "support": {
+    "issues": "https://github.com/alleyinteractive/wp-experimental-features/issues",
+    "source": "https://github.com/alleyinteractive/wp-experimental-features"
+  },
+  "type": "wordpress-plugin"
 }
