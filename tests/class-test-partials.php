@@ -8,7 +8,7 @@
 
 namespace Experimental_Features;
 
-use Mantle\Testing\Framework_Test_Case;
+use Mantle\Testkit\Test_Case;
 
 require_once ABSPATH . 'wp-admin/includes/admin.php';
 
@@ -18,7 +18,7 @@ require_once ABSPATH . 'wp-admin/includes/admin.php';
  * @package Experimental_Features
  * @subpackage Tests
  */
-class Test_Partials extends Framework_Test_Case {
+class Test_Partials extends Test_Case {
 
 	/**
 	 * Tests loading a partial.
