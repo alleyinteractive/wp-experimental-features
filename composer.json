@@ -1,27 +1,33 @@
 {
-  "authors": [
-    {
-      "name": "Alley Interactive",
-      "email": "noreply@alleyinteractive.com"
-    }
-  ],
+  "name": "alleyinteractive/wp-experimental-features",
   "description": "WP Experimental Features",
   "license": "GPL-2.0-or-later",
-  "name": "alleyinteractive/wp-experimental-features",
+  "type": "wordpress-plugin",
+  "authors": [
+    {
+      "name": "Alley",
+      "homepage": "https://alley.co/"
+    }
+  ],
+  "homepage": "https://github.com/alleyinteractive/wp-experimental-features",
+  "support": {
+    "issues": "https://github.com/alleyinteractive/wp-experimental-features/issues",
+    "source": "https://github.com/alleyinteractive/wp-experimental-features"
+  },
   "require-dev": {
     "alleyinteractive/alley-coding-standards": "^0.3.0",
     "alleyinteractive/mantle-framework": "dev-main",
     "phpunit/phpunit": "^8.5.8 || ^9.3.3"
   },
+  "config": {
+    "allow-plugins": {
+      "dealerdirect/phpcodesniffer-composer-installer": true,
+      "alleyinteractive/composer-wordpress-autoloader": true
+    }
+  },
   "scripts": {
     "phpcbf": "phpcbf .",
     "phpcs": "phpcs . --runtime-set text_domain experimental-features --runtime-set prefixes experimental_features",
     "phpunit": "phpunit"
-  },
-  "type": "project",
-  "config": {
-    "allow-plugins": {
-      "dealerdirect/phpcodesniffer-composer-installer": true
-    }
   }
 }
