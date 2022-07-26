@@ -19,11 +19,12 @@ jobs:
     strategy:
       fail-fast: true
       matrix:
+        php: [7.4, 8.0]
         wp_version: ["latest"]
         can_fail: [false]
         multisite: [0,1]
 
-    name: phpunit '7.4' @ WP ${{ matrix.wp_version }} WP_MULTISITE=${{ matrix.multisite }}
+    name: PHP ${{ matrix.php }} @ WP ${{ matrix.wp_version }} WP_MULTISITE=${{ matrix.multisite }}
     env:
       CACHEDIR: /tmp/test-cache
       WP_CORE_DIR: /tmp/wordpress/
@@ -32,7 +33,7 @@ jobs:
       WP_MULTISITE: ${{ matrix.multisite }}
       WP_DB_HOST: 127.0.0.1
       WP_DB_USER: root
-      WP_DB_PASSWORD: '""'
+      WP_DB_PASSWORD: ''
 
     steps:
       - name: Checkout code
@@ -57,7 +58,7 @@ jobs:
       - name: Setup PHP
         uses: shivammathur/setup-php@v2
         with:
-          php-version: '7.4'
+          php-version: ${{ matrix.php }}
           extensions: dom, curl, libxml, mbstring, zip, pcntl, pdo, sqlite, pdo_sqlite, gd
           tools: composer:v2
           coverage: none
