@@ -14,7 +14,7 @@
 
 namespace Experimental_Features;
 
-// Load files.
+// Load files (todo: convert to alleyinteractive/composer-wordpress-autoloader).
 require_once __DIR__ . '/autoloader.php';
 
 // Initialize functionality.
