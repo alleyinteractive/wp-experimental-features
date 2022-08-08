@@ -1299,7 +1299,7 @@
         },
         {
             "name": "mantle-framework/config",
-            "version": "v0.5.1",
+            "version": "v0.5.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mantle-framework/config.git",
@@ -1340,13 +1340,13 @@
             ],
             "description": "The Mantle Framework Config Package",
             "support": {
-                "source": "https://github.com/mantle-framework/config/tree/v0.5.1"
+                "source": "https://github.com/mantle-framework/config/tree/v0.5.4"
             },
             "time": "2022-07-30T03:28:27+00:00"
         },
         {
             "name": "mantle-framework/container",
-            "version": "v0.5.1",
+            "version": "v0.5.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mantle-framework/container.git",
@@ -1390,13 +1390,13 @@
             ],
             "description": "The Mantle Framework Container Package",
             "support": {
-                "source": "https://github.com/mantle-framework/container/tree/v0.5.1"
+                "source": "https://github.com/mantle-framework/container/tree/v0.5.4"
             },
             "time": "2022-07-30T03:28:30+00:00"
         },
         {
             "name": "mantle-framework/contracts",
-            "version": "v0.5.1",
+            "version": "v0.5.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mantle-framework/contracts.git",
@@ -1439,13 +1439,13 @@
             ],
             "description": "The Mantle Framework Contracts Package",
             "support": {
-                "source": "https://github.com/mantle-framework/contracts/tree/v0.5.1"
+                "source": "https://github.com/mantle-framework/contracts/tree/v0.5.4"
             },
             "time": "2022-07-30T03:28:29+00:00"
         },
         {
             "name": "mantle-framework/database",
-            "version": "v0.5.1",
+            "version": "v0.5.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mantle-framework/database.git",
@@ -1488,13 +1488,13 @@
             ],
             "description": "The Mantle Framework Database Package",
             "support": {
-                "source": "https://github.com/mantle-framework/database/tree/v0.5.1"
+                "source": "https://github.com/mantle-framework/database/tree/v0.5.4"
             },
             "time": "2022-07-30T03:28:27+00:00"
         },
         {
             "name": "mantle-framework/events",
-            "version": "v0.5.1",
+            "version": "v0.5.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mantle-framework/events.git",
@@ -1538,13 +1538,13 @@
             ],
             "description": "The Mantle Framework Events Package",
             "support": {
-                "source": "https://github.com/mantle-framework/events/tree/v0.5.1"
+                "source": "https://github.com/mantle-framework/events/tree/v0.5.4"
             },
             "time": "2022-07-30T03:28:34+00:00"
         },
         {
             "name": "mantle-framework/faker",
-            "version": "v0.5.1",
+            "version": "v0.5.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mantle-framework/faker.git",
@@ -1584,13 +1584,13 @@
             ],
             "description": "The Mantle Framework Faker Package",
             "support": {
-                "source": "https://github.com/mantle-framework/faker/tree/v0.5.1"
+                "source": "https://github.com/mantle-framework/faker/tree/v0.5.4"
             },
             "time": "2022-07-30T03:28:31+00:00"
         },
         {
             "name": "mantle-framework/filesystem",
-            "version": "v0.5.1",
+            "version": "v0.5.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mantle-framework/filesystem.git",
@@ -1636,13 +1636,13 @@
             ],
             "description": "The Mantle Framework Filesystem Package",
             "support": {
-                "source": "https://github.com/mantle-framework/filesystem/tree/v0.5.1"
+                "source": "https://github.com/mantle-framework/filesystem/tree/v0.5.4"
             },
             "time": "2022-07-30T03:28:25+00:00"
         },
         {
             "name": "mantle-framework/http",
-            "version": "v0.5.1",
+            "version": "v0.5.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mantle-framework/http.git",
@@ -1689,22 +1689,22 @@
             ],
             "description": "The Mantle Framework Http Package",
             "support": {
-                "source": "https://github.com/mantle-framework/http/tree/v0.5.1"
+                "source": "https://github.com/mantle-framework/http/tree/v0.5.4"
             },
             "time": "2022-07-26T03:36:44+00:00"
         },
         {
             "name": "mantle-framework/http-client",
-            "version": "v0.5.1",
+            "version": "v0.5.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mantle-framework/http-client.git",
-                "reference": "4d5cfd9b4612685fce78716b9ccfaadf20394ad3"
+                "reference": "b872c95719f9b606cac87af9b6d887c5d93d5910"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mantle-framework/http-client/zipball/4d5cfd9b4612685fce78716b9ccfaadf20394ad3",
-                "reference": "4d5cfd9b4612685fce78716b9ccfaadf20394ad3",
+                "url": "https://api.github.com/repos/mantle-framework/http-client/zipball/b872c95719f9b606cac87af9b6d887c5d93d5910",
+                "reference": "b872c95719f9b606cac87af9b6d887c5d93d5910",
                 "shasum": ""
             },
             "require": {
@@ -1735,13 +1735,13 @@
             ],
             "description": "The Mantle Framework Http Client Package",
             "support": {
-                "source": "https://github.com/mantle-framework/http-client/tree/v0.5.1"
+                "source": "https://github.com/mantle-framework/http-client/tree/v0.5.4"
             },
-            "time": "2022-07-30T03:28:33+00:00"
+            "time": "2022-08-03T13:39:52+00:00"
         },
         {
             "name": "mantle-framework/support",
-            "version": "v0.5.1",
+            "version": "v0.5.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mantle-framework/support.git",
@@ -1796,22 +1796,22 @@
             ],
             "description": "The Mantle Framework Support Package",
             "support": {
-                "source": "https://github.com/mantle-framework/support/tree/v0.5.1"
+                "source": "https://github.com/mantle-framework/support/tree/v0.5.4"
             },
             "time": "2022-07-30T03:28:56+00:00"
         },
         {
             "name": "mantle-framework/testing",
-            "version": "v0.5.1",
+            "version": "v0.5.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mantle-framework/testing.git",
-                "reference": "6d0ff2095b08074c1347e554bce3ab96bf0b9b63"
+                "reference": "c504775bdf6ae1309088fa8e3a29fb2e7d3fc2fb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mantle-framework/testing/zipball/6d0ff2095b08074c1347e554bce3ab96bf0b9b63",
-                "reference": "6d0ff2095b08074c1347e554bce3ab96bf0b9b63",
+                "url": "https://api.github.com/repos/mantle-framework/testing/zipball/c504775bdf6ae1309088fa8e3a29fb2e7d3fc2fb",
+                "reference": "c504775bdf6ae1309088fa8e3a29fb2e7d3fc2fb",
                 "shasum": ""
             },
             "require": {
@@ -1854,13 +1854,13 @@
             ],
             "description": "The Mantle Framework Testing Package",
             "support": {
-                "source": "https://github.com/mantle-framework/testing/tree/v0.5.1"
+                "source": "https://github.com/mantle-framework/testing/tree/v0.5.4"
             },
-            "time": "2022-08-01T23:27:24+00:00"
+            "time": "2022-08-04T19:24:10+00:00"
         },
         {
             "name": "mantle-framework/testkit",
-            "version": "v0.5.1",
+            "version": "v0.5.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mantle-framework/testkit.git",
@@ -1907,7 +1907,7 @@
             ],
             "description": "The Mantle Framework Teskit Package",
             "support": {
-                "source": "https://github.com/mantle-framework/testkit/tree/v0.5.1"
+                "source": "https://github.com/mantle-framework/testkit/tree/v0.5.4"
             },
             "time": "2022-08-01T23:27:33+00:00"
         },
@@ -2074,16 +2074,16 @@
         },
         {
             "name": "nesbot/carbon",
-            "version": "2.60.0",
+            "version": "2.61.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/briannesbitt/Carbon.git",
-                "reference": "00a259ae02b003c563158b54fb6743252b638ea6"
+                "reference": "bdf4f4fe3a3eac4de84dbec0738082a862c68ba6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/00a259ae02b003c563158b54fb6743252b638ea6",
-                "reference": "00a259ae02b003c563158b54fb6743252b638ea6",
+                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/bdf4f4fe3a3eac4de84dbec0738082a862c68ba6",
+                "reference": "bdf4f4fe3a3eac4de84dbec0738082a862c68ba6",
                 "shasum": ""
             },
             "require": {
@@ -2172,7 +2172,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-07-27T15:57:48+00:00"
+            "time": "2022-08-06T12:41:24+00:00"
         },
         {
             "name": "nikic/php-parser",
