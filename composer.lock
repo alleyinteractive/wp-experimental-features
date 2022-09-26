@@ -203,6 +203,58 @@
             "time": "2022-07-30T03:18:37+00:00"
         },
         {
+            "name": "alleyinteractive/wp-filter-side-effects",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/alleyinteractive/wp-filter-side-effects.git",
+                "reference": "ce831ad9d88cb77e018843d60ed42b3327799e9a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/alleyinteractive/wp-filter-side-effects/zipball/ce831ad9d88cb77e018843d60ed42b3327799e9a",
+                "reference": "ce831ad9d88cb77e018843d60ed42b3327799e9a",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.4 || ^8.0"
+            },
+            "require-dev": {
+                "alleyinteractive/alley-coding-standards": "^0.3",
+                "dealerdirect/phpcodesniffer-composer-installer": "^0.7.2",
+                "friendsofphp/php-cs-fixer": "^3.8",
+                "mantle-framework/testkit": "^0.2",
+                "phpunit/phpunit": "^9.5"
+            },
+            "type": "library",
+            "extra": {
+                "wordpress-autoloader": {
+                    "inject": true
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/Alley/WP/filter-side-effects.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Alley",
+                    "email": "info@alley.co"
+                }
+            ],
+            "description": "Use a WordPress filter like an action.",
+            "support": {
+                "issues": "https://github.com/alleyinteractive/wp-filter-side-effects/issues",
+                "source": "https://github.com/alleyinteractive/wp-filter-side-effects/tree/v1.0.0"
+            },
+            "time": "2022-06-02T18:59:40+00:00"
+        },
+        {
             "name": "automattic/vipwpcs",
             "version": "2.3.3",
             "source": {
@@ -559,7 +611,7 @@
         },
         {
             "name": "illuminate/bus",
-            "version": "v8.83.23",
+            "version": "v8.83.24",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/bus.git",
@@ -612,7 +664,7 @@
         },
         {
             "name": "illuminate/collections",
-            "version": "v8.83.23",
+            "version": "v8.83.24",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/collections.git",
@@ -666,7 +718,7 @@
         },
         {
             "name": "illuminate/container",
-            "version": "v8.83.23",
+            "version": "v8.83.24",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/container.git",
@@ -717,7 +769,7 @@
         },
         {
             "name": "illuminate/contracts",
-            "version": "v8.83.23",
+            "version": "v8.83.24",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/contracts.git",
@@ -765,7 +817,7 @@
         },
         {
             "name": "illuminate/events",
-            "version": "v8.83.23",
+            "version": "v8.83.24",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/events.git",
@@ -820,7 +872,7 @@
         },
         {
             "name": "illuminate/filesystem",
-            "version": "v8.83.23",
+            "version": "v8.83.24",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/filesystem.git",
@@ -882,7 +934,7 @@
         },
         {
             "name": "illuminate/macroable",
-            "version": "v8.83.23",
+            "version": "v8.83.24",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/macroable.git",
@@ -928,7 +980,7 @@
         },
         {
             "name": "illuminate/pipeline",
-            "version": "v8.83.23",
+            "version": "v8.83.24",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/pipeline.git",
@@ -976,16 +1028,16 @@
         },
         {
             "name": "illuminate/support",
-            "version": "v8.83.23",
+            "version": "v8.83.24",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/support.git",
-                "reference": "c3d643e77082786ae8a51502c757e9b1a3ee254e"
+                "reference": "1c79242468d3bbd9a0f7477df34f9647dde2a09b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/support/zipball/c3d643e77082786ae8a51502c757e9b1a3ee254e",
-                "reference": "c3d643e77082786ae8a51502c757e9b1a3ee254e",
+                "url": "https://api.github.com/repos/illuminate/support/zipball/1c79242468d3bbd9a0f7477df34f9647dde2a09b",
+                "reference": "1c79242468d3bbd9a0f7477df34f9647dde2a09b",
                 "shasum": ""
             },
             "require": {
@@ -1040,11 +1092,11 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2022-06-27T13:26:30+00:00"
+            "time": "2022-09-21T21:30:03+00:00"
         },
         {
             "name": "illuminate/view",
-            "version": "v8.83.23",
+            "version": "v8.83.24",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/view.git",
@@ -1299,7 +1351,7 @@
         },
         {
             "name": "mantle-framework/config",
-            "version": "v0.6.0",
+            "version": "v0.6.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mantle-framework/config.git",
@@ -1340,13 +1392,13 @@
             ],
             "description": "The Mantle Framework Config Package",
             "support": {
-                "source": "https://github.com/mantle-framework/config/tree/v0.6.0"
+                "source": "https://github.com/mantle-framework/config/tree/v0.6.1"
             },
             "time": "2022-09-02T19:12:29+00:00"
         },
         {
             "name": "mantle-framework/container",
-            "version": "v0.6.0",
+            "version": "v0.6.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mantle-framework/container.git",
@@ -1390,22 +1442,22 @@
             ],
             "description": "The Mantle Framework Container Package",
             "support": {
-                "source": "https://github.com/mantle-framework/container/tree/v0.6.0"
+                "source": "https://github.com/mantle-framework/container/tree/v0.6.1"
             },
             "time": "2022-09-02T19:12:28+00:00"
         },
         {
             "name": "mantle-framework/contracts",
-            "version": "v0.6.0",
+            "version": "v0.6.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mantle-framework/contracts.git",
-                "reference": "3d59f8cd6e6c6e7cfdedc25ca128631506f599f8"
+                "reference": "c603f38d6d4065da57f2ac53a78047fbb2c467f8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mantle-framework/contracts/zipball/3d59f8cd6e6c6e7cfdedc25ca128631506f599f8",
-                "reference": "3d59f8cd6e6c6e7cfdedc25ca128631506f599f8",
+                "url": "https://api.github.com/repos/mantle-framework/contracts/zipball/c603f38d6d4065da57f2ac53a78047fbb2c467f8",
+                "reference": "c603f38d6d4065da57f2ac53a78047fbb2c467f8",
                 "shasum": ""
             },
             "require": {
@@ -1439,26 +1491,27 @@
             ],
             "description": "The Mantle Framework Contracts Package",
             "support": {
-                "source": "https://github.com/mantle-framework/contracts/tree/v0.6.0"
+                "source": "https://github.com/mantle-framework/contracts/tree/v0.6.1"
             },
-            "time": "2022-09-02T19:12:25+00:00"
+            "time": "2022-09-16T16:43:26+00:00"
         },
         {
             "name": "mantle-framework/database",
-            "version": "v0.6.0",
+            "version": "v0.6.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mantle-framework/database.git",
-                "reference": "4002cd6b7f9bb5b220a4acad18512477f60e44ac"
+                "reference": "78912e73d35c735f8c45dd45423e72f12618d8ff"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mantle-framework/database/zipball/4002cd6b7f9bb5b220a4acad18512477f60e44ac",
-                "reference": "4002cd6b7f9bb5b220a4acad18512477f60e44ac",
+                "url": "https://api.github.com/repos/mantle-framework/database/zipball/78912e73d35c735f8c45dd45423e72f12618d8ff",
+                "reference": "78912e73d35c735f8c45dd45423e72f12618d8ff",
                 "shasum": ""
             },
             "require": {
                 "alleyinteractive/composer-wordpress-autoloader": "^1.0",
+                "alleyinteractive/wp-filter-side-effects": "^1.0",
                 "mantle-framework/contracts": "^0.6",
                 "mantle-framework/support": "^0.6",
                 "php": "^7.4|^8.0",
@@ -1488,13 +1541,13 @@
             ],
             "description": "The Mantle Framework Database Package",
             "support": {
-                "source": "https://github.com/mantle-framework/database/tree/v0.6.0"
+                "source": "https://github.com/mantle-framework/database/tree/v0.6.1"
             },
-            "time": "2022-09-15T14:44:39+00:00"
+            "time": "2022-09-20T18:47:58+00:00"
         },
         {
             "name": "mantle-framework/events",
-            "version": "v0.6.0",
+            "version": "v0.6.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mantle-framework/events.git",
@@ -1538,13 +1591,13 @@
             ],
             "description": "The Mantle Framework Events Package",
             "support": {
-                "source": "https://github.com/mantle-framework/events/tree/v0.6.0"
+                "source": "https://github.com/mantle-framework/events/tree/v0.6.1"
             },
             "time": "2022-09-02T19:12:23+00:00"
         },
         {
             "name": "mantle-framework/faker",
-            "version": "v0.6.0",
+            "version": "v0.6.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mantle-framework/faker.git",
@@ -1584,13 +1637,13 @@
             ],
             "description": "The Mantle Framework Faker Package",
             "support": {
-                "source": "https://github.com/mantle-framework/faker/tree/v0.6.0"
+                "source": "https://github.com/mantle-framework/faker/tree/v0.6.1"
             },
             "time": "2022-09-02T19:12:29+00:00"
         },
         {
             "name": "mantle-framework/filesystem",
-            "version": "v0.6.0",
+            "version": "v0.6.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mantle-framework/filesystem.git",
@@ -1636,13 +1689,13 @@
             ],
             "description": "The Mantle Framework Filesystem Package",
             "support": {
-                "source": "https://github.com/mantle-framework/filesystem/tree/v0.6.0"
+                "source": "https://github.com/mantle-framework/filesystem/tree/v0.6.1"
             },
             "time": "2022-09-02T19:12:22+00:00"
         },
         {
             "name": "mantle-framework/http",
-            "version": "v0.6.0",
+            "version": "v0.6.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mantle-framework/http.git",
@@ -1689,13 +1742,13 @@
             ],
             "description": "The Mantle Framework Http Package",
             "support": {
-                "source": "https://github.com/mantle-framework/http/tree/v0.6.0"
+                "source": "https://github.com/mantle-framework/http/tree/v0.6.1"
             },
             "time": "2022-08-11T19:16:47+00:00"
         },
         {
             "name": "mantle-framework/http-client",
-            "version": "v0.6.0",
+            "version": "v0.6.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mantle-framework/http-client.git",
@@ -1735,13 +1788,13 @@
             ],
             "description": "The Mantle Framework Http Client Package",
             "support": {
-                "source": "https://github.com/mantle-framework/http-client/tree/v0.6.0"
+                "source": "https://github.com/mantle-framework/http-client/tree/v0.6.1"
             },
             "time": "2022-08-11T19:16:45+00:00"
         },
         {
             "name": "mantle-framework/support",
-            "version": "v0.6.0",
+            "version": "v0.6.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mantle-framework/support.git",
@@ -1796,13 +1849,13 @@
             ],
             "description": "The Mantle Framework Support Package",
             "support": {
-                "source": "https://github.com/mantle-framework/support/tree/v0.6.0"
+                "source": "https://github.com/mantle-framework/support/tree/v0.6.1"
             },
             "time": "2022-09-15T14:45:10+00:00"
         },
         {
             "name": "mantle-framework/testing",
-            "version": "v0.6.0",
+            "version": "v0.6.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mantle-framework/testing.git",
@@ -1854,13 +1907,13 @@
             ],
             "description": "The Mantle Framework Testing Package",
             "support": {
-                "source": "https://github.com/mantle-framework/testing/tree/v0.6.0"
+                "source": "https://github.com/mantle-framework/testing/tree/v0.6.1"
             },
             "time": "2022-09-16T15:54:01+00:00"
         },
         {
             "name": "mantle-framework/testkit",
-            "version": "v0.6.0",
+            "version": "v0.6.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mantle-framework/testkit.git",
@@ -1907,7 +1960,7 @@
             ],
             "description": "The Mantle Framework Teskit Package",
             "support": {
-                "source": "https://github.com/mantle-framework/testkit/tree/v0.6.0"
+                "source": "https://github.com/mantle-framework/testkit/tree/v0.6.1"
             },
             "time": "2022-09-02T19:13:01+00:00"
         },
@@ -2833,16 +2886,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "9.5.24",
+            "version": "9.5.25",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "d0aa6097bef9fd42458a9b3c49da32c6ce6129c5"
+                "reference": "3e6f90ca7e3d02025b1d147bd8d4a89fd4ca8a1d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/d0aa6097bef9fd42458a9b3c49da32c6ce6129c5",
-                "reference": "d0aa6097bef9fd42458a9b3c49da32c6ce6129c5",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/3e6f90ca7e3d02025b1d147bd8d4a89fd4ca8a1d",
+                "reference": "3e6f90ca7e3d02025b1d147bd8d4a89fd4ca8a1d",
                 "shasum": ""
             },
             "require": {
@@ -2864,14 +2917,14 @@
                 "phpunit/php-timer": "^5.0.2",
                 "sebastian/cli-parser": "^1.0.1",
                 "sebastian/code-unit": "^1.0.6",
-                "sebastian/comparator": "^4.0.5",
+                "sebastian/comparator": "^4.0.8",
                 "sebastian/diff": "^4.0.3",
                 "sebastian/environment": "^5.1.3",
-                "sebastian/exporter": "^4.0.3",
+                "sebastian/exporter": "^4.0.5",
                 "sebastian/global-state": "^5.0.1",
                 "sebastian/object-enumerator": "^4.0.3",
                 "sebastian/resource-operations": "^3.0.3",
-                "sebastian/type": "^3.1",
+                "sebastian/type": "^3.2",
                 "sebastian/version": "^3.0.2"
             },
             "suggest": {
@@ -2915,7 +2968,7 @@
             ],
             "support": {
                 "issues": "https://github.com/sebastianbergmann/phpunit/issues",
-                "source": "https://github.com/sebastianbergmann/phpunit/tree/9.5.24"
+                "source": "https://github.com/sebastianbergmann/phpunit/tree/9.5.25"
             },
             "funding": [
                 {
@@ -2925,9 +2978,13 @@
                 {
                     "url": "https://github.com/sebastianbergmann",
                     "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/phpunit/phpunit",
+                    "type": "tidelift"
                 }
             ],
-            "time": "2022-08-30T07:42:16+00:00"
+            "time": "2022-09-25T03:44:45+00:00"
         },
         {
             "name": "psr/cache",
