@@ -147,16 +147,16 @@
         },
         {
             "name": "alleyinteractive/wp-concurrent-remote-requests",
-            "version": "v1.0.0",
+            "version": "v1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/alleyinteractive/wp-concurrent-remote-requests.git",
-                "reference": "a52fa5add36c622f25c7a54ed0ac6eaf63bdbd87"
+                "reference": "dbc24e29ac39f22627f0e544d704b7412e1fece7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/alleyinteractive/wp-concurrent-remote-requests/zipball/a52fa5add36c622f25c7a54ed0ac6eaf63bdbd87",
-                "reference": "a52fa5add36c622f25c7a54ed0ac6eaf63bdbd87",
+                "url": "https://api.github.com/repos/alleyinteractive/wp-concurrent-remote-requests/zipball/dbc24e29ac39f22627f0e544d704b7412e1fece7",
+                "reference": "dbc24e29ac39f22627f0e544d704b7412e1fece7",
                 "shasum": ""
             },
             "require": {
@@ -168,7 +168,7 @@
                 "nunomaduro/collision": "^5.0",
                 "phpunit/phpunit": "^9.3.3"
             },
-            "type": "wordpress-plugin",
+            "type": "library",
             "extra": {
                 "wordpress-autoloader": {
                     "autoload": {
@@ -202,9 +202,9 @@
             ],
             "support": {
                 "issues": "https://github.com/alleyinteractive/wp-concurrent-remote-requests/issues",
-                "source": "https://github.com/alleyinteractive/wp-concurrent-remote-requests/tree/v1.0.0"
+                "source": "https://github.com/alleyinteractive/wp-concurrent-remote-requests/tree/v1.0.1"
             },
-            "time": "2022-07-30T03:18:37+00:00"
+            "time": "2023-03-24T19:28:58+00:00"
         },
         {
             "name": "alleyinteractive/wp-filter-side-effects",
@@ -669,16 +669,16 @@
         },
         {
             "name": "filp/whoops",
-            "version": "2.14.6",
+            "version": "2.15.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/filp/whoops.git",
-                "reference": "f7948baaa0330277c729714910336383286305da"
+                "reference": "e864ac957acd66e1565f25efda61e37791a5db0b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/filp/whoops/zipball/f7948baaa0330277c729714910336383286305da",
-                "reference": "f7948baaa0330277c729714910336383286305da",
+                "url": "https://api.github.com/repos/filp/whoops/zipball/e864ac957acd66e1565f25efda61e37791a5db0b",
+                "reference": "e864ac957acd66e1565f25efda61e37791a5db0b",
                 "shasum": ""
             },
             "require": {
@@ -728,7 +728,7 @@
             ],
             "support": {
                 "issues": "https://github.com/filp/whoops/issues",
-                "source": "https://github.com/filp/whoops/tree/2.14.6"
+                "source": "https://github.com/filp/whoops/tree/2.15.1"
             },
             "funding": [
                 {
@@ -736,20 +736,20 @@
                     "type": "github"
                 }
             ],
-            "time": "2022-11-02T16:23:29+00:00"
+            "time": "2023-03-06T18:09:13+00:00"
         },
         {
             "name": "illuminate/bus",
-            "version": "v9.52.0",
+            "version": "v9.52.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/bus.git",
-                "reference": "c7f09872054f2b361f8ed9e9e988b3c9be06c596"
+                "reference": "f724dbe9ac4a215d76f41f2766a8dae4fb53463a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/bus/zipball/c7f09872054f2b361f8ed9e9e988b3c9be06c596",
-                "reference": "c7f09872054f2b361f8ed9e9e988b3c9be06c596",
+                "url": "https://api.github.com/repos/illuminate/bus/zipball/f724dbe9ac4a215d76f41f2766a8dae4fb53463a",
+                "reference": "f724dbe9ac4a215d76f41f2766a8dae4fb53463a",
                 "shasum": ""
             },
             "require": {
@@ -789,20 +789,20 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2022-11-25T07:56:47+00:00"
+            "time": "2023-03-10T20:58:15+00:00"
         },
         {
             "name": "illuminate/collections",
-            "version": "v9.52.0",
+            "version": "v9.52.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/collections.git",
-                "reference": "f3ac81877e98c0c096ef403ab4f0c7ed96623c18"
+                "reference": "0168d0e44ea0c4fe5451fe08cde7049b9e9f9741"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/collections/zipball/f3ac81877e98c0c096ef403ab4f0c7ed96623c18",
-                "reference": "f3ac81877e98c0c096ef403ab4f0c7ed96623c18",
+                "url": "https://api.github.com/repos/illuminate/collections/zipball/0168d0e44ea0c4fe5451fe08cde7049b9e9f9741",
+                "reference": "0168d0e44ea0c4fe5451fe08cde7049b9e9f9741",
                 "shasum": ""
             },
             "require": {
@@ -844,11 +844,11 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2023-02-10T19:46:01+00:00"
+            "time": "2023-02-22T11:32:27+00:00"
         },
         {
             "name": "illuminate/conditionable",
-            "version": "v9.52.0",
+            "version": "v9.52.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/conditionable.git",
@@ -894,7 +894,7 @@
         },
         {
             "name": "illuminate/container",
-            "version": "v9.52.0",
+            "version": "v9.52.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/container.git",
@@ -945,7 +945,7 @@
         },
         {
             "name": "illuminate/contracts",
-            "version": "v9.52.0",
+            "version": "v9.52.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/contracts.git",
@@ -993,7 +993,7 @@
         },
         {
             "name": "illuminate/events",
-            "version": "v9.52.0",
+            "version": "v9.52.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/events.git",
@@ -1048,7 +1048,7 @@
         },
         {
             "name": "illuminate/filesystem",
-            "version": "v9.52.0",
+            "version": "v9.52.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/filesystem.git",
@@ -1112,7 +1112,7 @@
         },
         {
             "name": "illuminate/macroable",
-            "version": "v9.52.0",
+            "version": "v9.52.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/macroable.git",
@@ -1158,7 +1158,7 @@
         },
         {
             "name": "illuminate/pipeline",
-            "version": "v9.52.0",
+            "version": "v9.52.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/pipeline.git",
@@ -1206,16 +1206,16 @@
         },
         {
             "name": "illuminate/support",
-            "version": "v9.52.0",
+            "version": "v9.52.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/support.git",
-                "reference": "63dcb4523ccdfc01cdf5be17791f07cc20982a1e"
+                "reference": "199e5250735d0c49fe0385360451659690ff71a3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/support/zipball/63dcb4523ccdfc01cdf5be17791f07cc20982a1e",
-                "reference": "63dcb4523ccdfc01cdf5be17791f07cc20982a1e",
+                "url": "https://api.github.com/repos/illuminate/support/zipball/199e5250735d0c49fe0385360451659690ff71a3",
+                "reference": "199e5250735d0c49fe0385360451659690ff71a3",
                 "shasum": ""
             },
             "require": {
@@ -1273,20 +1273,20 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2023-02-13T16:54:43+00:00"
+            "time": "2023-03-13T01:37:31+00:00"
         },
         {
             "name": "illuminate/view",
-            "version": "v9.52.0",
+            "version": "v9.52.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/view.git",
-                "reference": "f263ca8f106e5a6290671384684dd27ae30b7f9b"
+                "reference": "0215165781b3269cdbecdfe63ffddd0e6cecfd6e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/view/zipball/f263ca8f106e5a6290671384684dd27ae30b7f9b",
-                "reference": "f263ca8f106e5a6290671384684dd27ae30b7f9b",
+                "url": "https://api.github.com/repos/illuminate/view/zipball/0215165781b3269cdbecdfe63ffddd0e6cecfd6e",
+                "reference": "0215165781b3269cdbecdfe63ffddd0e6cecfd6e",
                 "shasum": ""
             },
             "require": {
@@ -1327,7 +1327,7 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2023-02-08T14:36:30+00:00"
+            "time": "2023-03-13T01:21:46+00:00"
         },
         {
             "name": "league/flysystem",
@@ -1532,7 +1532,7 @@
         },
         {
             "name": "mantle-framework/config",
-            "version": "v0.10.1",
+            "version": "v0.10.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mantle-framework/config.git",
@@ -1578,13 +1578,13 @@
             ],
             "description": "The Mantle Framework Config Package",
             "support": {
-                "source": "https://github.com/mantle-framework/config/tree/v0.10.1"
+                "source": "https://github.com/mantle-framework/config/tree/v0.10.6"
             },
             "time": "2023-01-06T03:29:08+00:00"
         },
         {
             "name": "mantle-framework/container",
-            "version": "v0.10.1",
+            "version": "v0.10.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mantle-framework/container.git",
@@ -1628,22 +1628,22 @@
             ],
             "description": "The Mantle Framework Container Package",
             "support": {
-                "source": "https://github.com/mantle-framework/container/tree/v0.10.1"
+                "source": "https://github.com/mantle-framework/container/tree/v0.10.6"
             },
             "time": "2023-01-06T03:29:07+00:00"
         },
         {
             "name": "mantle-framework/contracts",
-            "version": "v0.10.1",
+            "version": "v0.10.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mantle-framework/contracts.git",
-                "reference": "1bb0dd592be0289b434130ae35d7da9a1bb061aa"
+                "reference": "d883fc2f5a6fd9c54ed4f232358ba01d3ab672d5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mantle-framework/contracts/zipball/1bb0dd592be0289b434130ae35d7da9a1bb061aa",
-                "reference": "1bb0dd592be0289b434130ae35d7da9a1bb061aa",
+                "url": "https://api.github.com/repos/mantle-framework/contracts/zipball/d883fc2f5a6fd9c54ed4f232358ba01d3ab672d5",
+                "reference": "d883fc2f5a6fd9c54ed4f232358ba01d3ab672d5",
                 "shasum": ""
             },
             "require": {
@@ -1677,22 +1677,22 @@
             ],
             "description": "The Mantle Framework Contracts Package",
             "support": {
-                "source": "https://github.com/mantle-framework/contracts/tree/v0.10.1"
+                "source": "https://github.com/mantle-framework/contracts/tree/v0.10.6"
             },
-            "time": "2023-01-06T03:29:11+00:00"
+            "time": "2023-03-31T15:34:42+00:00"
         },
         {
             "name": "mantle-framework/database",
-            "version": "v0.10.1",
+            "version": "v0.10.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mantle-framework/database.git",
-                "reference": "fa09abb52e87ee9d6a746d8d7f233d315dbb4324"
+                "reference": "43383fd9e2f612fdad9f32d7c8577db8519f4150"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mantle-framework/database/zipball/fa09abb52e87ee9d6a746d8d7f233d315dbb4324",
-                "reference": "fa09abb52e87ee9d6a746d8d7f233d315dbb4324",
+                "url": "https://api.github.com/repos/mantle-framework/database/zipball/43383fd9e2f612fdad9f32d7c8577db8519f4150",
+                "reference": "43383fd9e2f612fdad9f32d7c8577db8519f4150",
                 "shasum": ""
             },
             "require": {
@@ -1727,13 +1727,13 @@
             ],
             "description": "The Mantle Framework Database Package",
             "support": {
-                "source": "https://github.com/mantle-framework/database/tree/v0.10.1"
+                "source": "https://github.com/mantle-framework/database/tree/v0.10.6"
             },
-            "time": "2023-01-06T03:29:07+00:00"
+            "time": "2023-03-31T17:29:25+00:00"
         },
         {
             "name": "mantle-framework/events",
-            "version": "v0.10.1",
+            "version": "v0.10.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mantle-framework/events.git",
@@ -1777,13 +1777,13 @@
             ],
             "description": "The Mantle Framework Events Package",
             "support": {
-                "source": "https://github.com/mantle-framework/events/tree/v0.10.1"
+                "source": "https://github.com/mantle-framework/events/tree/v0.10.6"
             },
             "time": "2023-01-06T03:29:13+00:00"
         },
         {
             "name": "mantle-framework/faker",
-            "version": "v0.10.1",
+            "version": "v0.10.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mantle-framework/faker.git",
@@ -1823,13 +1823,13 @@
             ],
             "description": "The Mantle Framework Faker Package",
             "support": {
-                "source": "https://github.com/mantle-framework/faker/tree/v0.10.1"
+                "source": "https://github.com/mantle-framework/faker/tree/v0.10.6"
             },
             "time": "2023-01-06T03:29:13+00:00"
         },
         {
             "name": "mantle-framework/filesystem",
-            "version": "v0.10.1",
+            "version": "v0.10.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mantle-framework/filesystem.git",
@@ -1875,13 +1875,13 @@
             ],
             "description": "The Mantle Framework Filesystem Package",
             "support": {
-                "source": "https://github.com/mantle-framework/filesystem/tree/v0.10.1"
+                "source": "https://github.com/mantle-framework/filesystem/tree/v0.10.6"
             },
             "time": "2023-01-06T03:29:12+00:00"
         },
         {
             "name": "mantle-framework/http",
-            "version": "v0.10.1",
+            "version": "v0.10.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mantle-framework/http.git",
@@ -1933,13 +1933,13 @@
             ],
             "description": "The Mantle Framework Http Package",
             "support": {
-                "source": "https://github.com/mantle-framework/http/tree/v0.10.1"
+                "source": "https://github.com/mantle-framework/http/tree/v0.10.6"
             },
             "time": "2023-01-06T03:29:07+00:00"
         },
         {
             "name": "mantle-framework/http-client",
-            "version": "v0.10.1",
+            "version": "v0.10.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mantle-framework/http-client.git",
@@ -1979,13 +1979,13 @@
             ],
             "description": "The Mantle Framework Http Client Package",
             "support": {
-                "source": "https://github.com/mantle-framework/http-client/tree/v0.10.1"
+                "source": "https://github.com/mantle-framework/http-client/tree/v0.10.6"
             },
             "time": "2023-01-06T03:29:28+00:00"
         },
         {
             "name": "mantle-framework/support",
-            "version": "v0.10.1",
+            "version": "v0.10.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mantle-framework/support.git",
@@ -2040,22 +2040,22 @@
             ],
             "description": "The Mantle Framework Support Package",
             "support": {
-                "source": "https://github.com/mantle-framework/support/tree/v0.10.1"
+                "source": "https://github.com/mantle-framework/support/tree/v0.10.6"
             },
             "time": "2023-01-10T15:51:06+00:00"
         },
         {
             "name": "mantle-framework/testing",
-            "version": "v0.10.1",
+            "version": "v0.10.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mantle-framework/testing.git",
-                "reference": "be96e68b593adef800ce2fe16d6c55be707be05f"
+                "reference": "dbd0f7689c92cae138a6bc189a20cec085c479b6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mantle-framework/testing/zipball/be96e68b593adef800ce2fe16d6c55be707be05f",
-                "reference": "be96e68b593adef800ce2fe16d6c55be707be05f",
+                "url": "https://api.github.com/repos/mantle-framework/testing/zipball/dbd0f7689c92cae138a6bc189a20cec085c479b6",
+                "reference": "dbd0f7689c92cae138a6bc189a20cec085c479b6",
                 "shasum": ""
             },
             "require": {
@@ -2106,13 +2106,13 @@
                 "testing"
             ],
             "support": {
-                "source": "https://github.com/mantle-framework/testing/tree/v0.10.1"
+                "source": "https://github.com/mantle-framework/testing/tree/v0.10.6"
             },
-            "time": "2023-01-06T19:08:23+00:00"
+            "time": "2023-03-31T17:29:36+00:00"
         },
         {
             "name": "mantle-framework/testkit",
-            "version": "v0.10.1",
+            "version": "v0.10.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mantle-framework/testkit.git",
@@ -2164,7 +2164,7 @@
                 "testing"
             ],
             "support": {
-                "source": "https://github.com/mantle-framework/testkit/tree/v0.10.1"
+                "source": "https://github.com/mantle-framework/testkit/tree/v0.10.6"
             },
             "time": "2023-01-06T03:29:39+00:00"
         },
@@ -2272,16 +2272,16 @@
         },
         {
             "name": "myclabs/deep-copy",
-            "version": "1.11.0",
+            "version": "1.11.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/myclabs/DeepCopy.git",
-                "reference": "14daed4296fae74d9e3201d2c4925d1acb7aa614"
+                "reference": "7284c22080590fb39f2ffa3e9057f10a4ddd0e0c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/myclabs/DeepCopy/zipball/14daed4296fae74d9e3201d2c4925d1acb7aa614",
-                "reference": "14daed4296fae74d9e3201d2c4925d1acb7aa614",
+                "url": "https://api.github.com/repos/myclabs/DeepCopy/zipball/7284c22080590fb39f2ffa3e9057f10a4ddd0e0c",
+                "reference": "7284c22080590fb39f2ffa3e9057f10a4ddd0e0c",
                 "shasum": ""
             },
             "require": {
@@ -2319,7 +2319,7 @@
             ],
             "support": {
                 "issues": "https://github.com/myclabs/DeepCopy/issues",
-                "source": "https://github.com/myclabs/DeepCopy/tree/1.11.0"
+                "source": "https://github.com/myclabs/DeepCopy/tree/1.11.1"
             },
             "funding": [
                 {
@@ -2327,7 +2327,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-03-03T13:19:32+00:00"
+            "time": "2023-03-08T13:26:56+00:00"
         },
         {
             "name": "nesbot/carbon",
@@ -2433,16 +2433,16 @@
         },
         {
             "name": "nikic/php-parser",
-            "version": "v4.15.3",
+            "version": "v4.15.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nikic/PHP-Parser.git",
-                "reference": "570e980a201d8ed0236b0a62ddf2c9cbb2034039"
+                "reference": "6bb5176bc4af8bcb7d926f88718db9b96a2d4290"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/570e980a201d8ed0236b0a62ddf2c9cbb2034039",
-                "reference": "570e980a201d8ed0236b0a62ddf2c9cbb2034039",
+                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/6bb5176bc4af8bcb7d926f88718db9b96a2d4290",
+                "reference": "6bb5176bc4af8bcb7d926f88718db9b96a2d4290",
                 "shasum": ""
             },
             "require": {
@@ -2483,9 +2483,9 @@
             ],
             "support": {
                 "issues": "https://github.com/nikic/PHP-Parser/issues",
-                "source": "https://github.com/nikic/PHP-Parser/tree/v4.15.3"
+                "source": "https://github.com/nikic/PHP-Parser/tree/v4.15.4"
             },
-            "time": "2023-01-16T22:05:37+00:00"
+            "time": "2023-03-05T19:49:14+00:00"
         },
         {
             "name": "nunomaduro/collision",
@@ -2947,23 +2947,23 @@
         },
         {
             "name": "phpunit/php-code-coverage",
-            "version": "9.2.24",
+            "version": "9.2.26",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/php-code-coverage.git",
-                "reference": "2cf940ebc6355a9d430462811b5aaa308b174bed"
+                "reference": "443bc6912c9bd5b409254a40f4b0f4ced7c80ea1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/2cf940ebc6355a9d430462811b5aaa308b174bed",
-                "reference": "2cf940ebc6355a9d430462811b5aaa308b174bed",
+                "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/443bc6912c9bd5b409254a40f4b0f4ced7c80ea1",
+                "reference": "443bc6912c9bd5b409254a40f4b0f4ced7c80ea1",
                 "shasum": ""
             },
             "require": {
                 "ext-dom": "*",
                 "ext-libxml": "*",
                 "ext-xmlwriter": "*",
-                "nikic/php-parser": "^4.14",
+                "nikic/php-parser": "^4.15",
                 "php": ">=7.3",
                 "phpunit/php-file-iterator": "^3.0.3",
                 "phpunit/php-text-template": "^2.0.2",
@@ -2978,8 +2978,8 @@
                 "phpunit/phpunit": "^9.3"
             },
             "suggest": {
-                "ext-pcov": "*",
-                "ext-xdebug": "*"
+                "ext-pcov": "PHP extension that provides line coverage",
+                "ext-xdebug": "PHP extension that provides line coverage as well as branch and path coverage"
             },
             "type": "library",
             "extra": {
@@ -3012,7 +3012,7 @@
             ],
             "support": {
                 "issues": "https://github.com/sebastianbergmann/php-code-coverage/issues",
-                "source": "https://github.com/sebastianbergmann/php-code-coverage/tree/9.2.24"
+                "source": "https://github.com/sebastianbergmann/php-code-coverage/tree/9.2.26"
             },
             "funding": [
                 {
@@ -3020,7 +3020,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-01-26T08:26:55+00:00"
+            "time": "2023-03-06T12:58:08+00:00"
         },
         {
             "name": "phpunit/php-file-iterator",
@@ -3265,16 +3265,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "9.6.3",
+            "version": "9.6.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "e7b1615e3e887d6c719121c6d4a44b0ab9645555"
+                "reference": "b65d59a059d3004a040c16a82e07bbdf6cfdd115"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/e7b1615e3e887d6c719121c6d4a44b0ab9645555",
-                "reference": "e7b1615e3e887d6c719121c6d4a44b0ab9645555",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/b65d59a059d3004a040c16a82e07bbdf6cfdd115",
+                "reference": "b65d59a059d3004a040c16a82e07bbdf6cfdd115",
                 "shasum": ""
             },
             "require": {
@@ -3307,8 +3307,8 @@
                 "sebastian/version": "^3.0.2"
             },
             "suggest": {
-                "ext-soap": "*",
-                "ext-xdebug": "*"
+                "ext-soap": "To be able to generate mocks based on WSDL files",
+                "ext-xdebug": "PHP extension that provides line coverage as well as branch and path coverage"
             },
             "bin": [
                 "phpunit"
@@ -3347,7 +3347,8 @@
             ],
             "support": {
                 "issues": "https://github.com/sebastianbergmann/phpunit/issues",
-                "source": "https://github.com/sebastianbergmann/phpunit/tree/9.6.3"
+                "security": "https://github.com/sebastianbergmann/phpunit/security/policy",
+                "source": "https://github.com/sebastianbergmann/phpunit/tree/9.6.6"
             },
             "funding": [
                 {
@@ -3363,7 +3364,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-02-04T13:37:15+00:00"
+            "time": "2023-03-27T11:43:46+00:00"
         },
         {
             "name": "psr/cache",
@@ -4584,16 +4585,16 @@
         },
         {
             "name": "sirbrillig/phpcs-variable-analysis",
-            "version": "v2.11.10",
+            "version": "v2.11.16",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sirbrillig/phpcs-variable-analysis.git",
-                "reference": "0f25a3766f26df91d6bdda0c8931303fc85499d7"
+                "reference": "dc5582dc5a93a235557af73e523c389aac9a8e88"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sirbrillig/phpcs-variable-analysis/zipball/0f25a3766f26df91d6bdda0c8931303fc85499d7",
-                "reference": "0f25a3766f26df91d6bdda0c8931303fc85499d7",
+                "url": "https://api.github.com/repos/sirbrillig/phpcs-variable-analysis/zipball/dc5582dc5a93a235557af73e523c389aac9a8e88",
+                "reference": "dc5582dc5a93a235557af73e523c389aac9a8e88",
                 "shasum": ""
             },
             "require": {
@@ -4638,20 +4639,20 @@
                 "source": "https://github.com/sirbrillig/phpcs-variable-analysis",
                 "wiki": "https://github.com/sirbrillig/phpcs-variable-analysis/wiki"
             },
-            "time": "2023-01-05T18:45:16+00:00"
+            "time": "2023-03-31T16:46:32+00:00"
         },
         {
             "name": "squizlabs/php_codesniffer",
-            "version": "3.7.1",
+            "version": "3.7.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/squizlabs/PHP_CodeSniffer.git",
-                "reference": "1359e176e9307e906dc3d890bcc9603ff6d90619"
+                "reference": "ed8e00df0a83aa96acf703f8c2979ff33341f879"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/squizlabs/PHP_CodeSniffer/zipball/1359e176e9307e906dc3d890bcc9603ff6d90619",
-                "reference": "1359e176e9307e906dc3d890bcc9603ff6d90619",
+                "url": "https://api.github.com/repos/squizlabs/PHP_CodeSniffer/zipball/ed8e00df0a83aa96acf703f8c2979ff33341f879",
+                "reference": "ed8e00df0a83aa96acf703f8c2979ff33341f879",
                 "shasum": ""
             },
             "require": {
@@ -4687,27 +4688,28 @@
             "homepage": "https://github.com/squizlabs/PHP_CodeSniffer",
             "keywords": [
                 "phpcs",
-                "standards"
+                "standards",
+                "static analysis"
             ],
             "support": {
                 "issues": "https://github.com/squizlabs/PHP_CodeSniffer/issues",
                 "source": "https://github.com/squizlabs/PHP_CodeSniffer",
                 "wiki": "https://github.com/squizlabs/PHP_CodeSniffer/wiki"
             },
-            "time": "2022-06-18T07:21:10+00:00"
+            "time": "2023-02-22T23:07:41+00:00"
         },
         {
             "name": "symfony/console",
-            "version": "v5.4.19",
+            "version": "v5.4.22",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/console.git",
-                "reference": "dccb8d251a9017d5994c988b034d3e18aaabf740"
+                "reference": "3cd51fd2e6c461ca678f84d419461281bd87a0a8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/console/zipball/dccb8d251a9017d5994c988b034d3e18aaabf740",
-                "reference": "dccb8d251a9017d5994c988b034d3e18aaabf740",
+                "url": "https://api.github.com/repos/symfony/console/zipball/3cd51fd2e6c461ca678f84d419461281bd87a0a8",
+                "reference": "3cd51fd2e6c461ca678f84d419461281bd87a0a8",
                 "shasum": ""
             },
             "require": {
@@ -4772,12 +4774,12 @@
             "homepage": "https://symfony.com",
             "keywords": [
                 "cli",
-                "command line",
+                "command-line",
                 "console",
                 "terminal"
             ],
             "support": {
-                "source": "https://github.com/symfony/console/tree/v5.4.19"
+                "source": "https://github.com/symfony/console/tree/v5.4.22"
             },
             "funding": [
                 {
@@ -4793,7 +4795,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-01-01T08:32:19+00:00"
+            "time": "2023-03-25T09:27:28+00:00"
         },
         {
             "name": "symfony/deprecation-contracts",
