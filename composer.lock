@@ -1532,7 +1532,7 @@
         },
         {
             "name": "mantle-framework/config",
-            "version": "v0.10.6",
+            "version": "v0.10.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mantle-framework/config.git",
@@ -1578,13 +1578,13 @@
             ],
             "description": "The Mantle Framework Config Package",
             "support": {
-                "source": "https://github.com/mantle-framework/config/tree/v0.10.6"
+                "source": "https://github.com/mantle-framework/config/tree/v0.10.7"
             },
             "time": "2023-01-06T03:29:08+00:00"
         },
         {
             "name": "mantle-framework/container",
-            "version": "v0.10.6",
+            "version": "v0.10.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mantle-framework/container.git",
@@ -1628,13 +1628,13 @@
             ],
             "description": "The Mantle Framework Container Package",
             "support": {
-                "source": "https://github.com/mantle-framework/container/tree/v0.10.6"
+                "source": "https://github.com/mantle-framework/container/tree/v0.10.7"
             },
             "time": "2023-01-06T03:29:07+00:00"
         },
         {
             "name": "mantle-framework/contracts",
-            "version": "v0.10.6",
+            "version": "v0.10.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mantle-framework/contracts.git",
@@ -1677,13 +1677,13 @@
             ],
             "description": "The Mantle Framework Contracts Package",
             "support": {
-                "source": "https://github.com/mantle-framework/contracts/tree/v0.10.6"
+                "source": "https://github.com/mantle-framework/contracts/tree/v0.10.7"
             },
             "time": "2023-03-31T15:34:42+00:00"
         },
         {
             "name": "mantle-framework/database",
-            "version": "v0.10.6",
+            "version": "v0.10.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mantle-framework/database.git",
@@ -1727,13 +1727,13 @@
             ],
             "description": "The Mantle Framework Database Package",
             "support": {
-                "source": "https://github.com/mantle-framework/database/tree/v0.10.6"
+                "source": "https://github.com/mantle-framework/database/tree/v0.10.7"
             },
             "time": "2023-03-31T17:29:25+00:00"
         },
         {
             "name": "mantle-framework/events",
-            "version": "v0.10.6",
+            "version": "v0.10.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mantle-framework/events.git",
@@ -1777,13 +1777,13 @@
             ],
             "description": "The Mantle Framework Events Package",
             "support": {
-                "source": "https://github.com/mantle-framework/events/tree/v0.10.6"
+                "source": "https://github.com/mantle-framework/events/tree/v0.10.7"
             },
             "time": "2023-01-06T03:29:13+00:00"
         },
         {
             "name": "mantle-framework/faker",
-            "version": "v0.10.6",
+            "version": "v0.10.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mantle-framework/faker.git",
@@ -1823,13 +1823,13 @@
             ],
             "description": "The Mantle Framework Faker Package",
             "support": {
-                "source": "https://github.com/mantle-framework/faker/tree/v0.10.6"
+                "source": "https://github.com/mantle-framework/faker/tree/v0.10.7"
             },
             "time": "2023-01-06T03:29:13+00:00"
         },
         {
             "name": "mantle-framework/filesystem",
-            "version": "v0.10.6",
+            "version": "v0.10.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mantle-framework/filesystem.git",
@@ -1875,13 +1875,13 @@
             ],
             "description": "The Mantle Framework Filesystem Package",
             "support": {
-                "source": "https://github.com/mantle-framework/filesystem/tree/v0.10.6"
+                "source": "https://github.com/mantle-framework/filesystem/tree/v0.10.7"
             },
             "time": "2023-01-06T03:29:12+00:00"
         },
         {
             "name": "mantle-framework/http",
-            "version": "v0.10.6",
+            "version": "v0.10.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mantle-framework/http.git",
@@ -1933,13 +1933,13 @@
             ],
             "description": "The Mantle Framework Http Package",
             "support": {
-                "source": "https://github.com/mantle-framework/http/tree/v0.10.6"
+                "source": "https://github.com/mantle-framework/http/tree/v0.10.7"
             },
             "time": "2023-01-06T03:29:07+00:00"
         },
         {
             "name": "mantle-framework/http-client",
-            "version": "v0.10.6",
+            "version": "v0.10.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mantle-framework/http-client.git",
@@ -1979,13 +1979,13 @@
             ],
             "description": "The Mantle Framework Http Client Package",
             "support": {
-                "source": "https://github.com/mantle-framework/http-client/tree/v0.10.6"
+                "source": "https://github.com/mantle-framework/http-client/tree/v0.10.7"
             },
             "time": "2023-01-06T03:29:28+00:00"
         },
         {
             "name": "mantle-framework/support",
-            "version": "v0.10.6",
+            "version": "v0.10.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mantle-framework/support.git",
@@ -2040,22 +2040,22 @@
             ],
             "description": "The Mantle Framework Support Package",
             "support": {
-                "source": "https://github.com/mantle-framework/support/tree/v0.10.6"
+                "source": "https://github.com/mantle-framework/support/tree/v0.10.7"
             },
             "time": "2023-01-10T15:51:06+00:00"
         },
         {
             "name": "mantle-framework/testing",
-            "version": "v0.10.6",
+            "version": "v0.10.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mantle-framework/testing.git",
-                "reference": "dbd0f7689c92cae138a6bc189a20cec085c479b6"
+                "reference": "dcd8189eed85dfea6112c16e6dadf95b571edcdb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mantle-framework/testing/zipball/dbd0f7689c92cae138a6bc189a20cec085c479b6",
-                "reference": "dbd0f7689c92cae138a6bc189a20cec085c479b6",
+                "url": "https://api.github.com/repos/mantle-framework/testing/zipball/dcd8189eed85dfea6112c16e6dadf95b571edcdb",
+                "reference": "dcd8189eed85dfea6112c16e6dadf95b571edcdb",
                 "shasum": ""
             },
             "require": {
@@ -2106,13 +2106,13 @@
                 "testing"
             ],
             "support": {
-                "source": "https://github.com/mantle-framework/testing/tree/v0.10.6"
+                "source": "https://github.com/mantle-framework/testing/tree/v0.10.7"
             },
-            "time": "2023-03-31T17:29:36+00:00"
+            "time": "2023-04-04T18:34:04+00:00"
         },
         {
             "name": "mantle-framework/testkit",
-            "version": "v0.10.6",
+            "version": "v0.10.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mantle-framework/testkit.git",
@@ -2164,7 +2164,7 @@
                 "testing"
             ],
             "support": {
-                "source": "https://github.com/mantle-framework/testkit/tree/v0.10.6"
+                "source": "https://github.com/mantle-framework/testkit/tree/v0.10.7"
             },
             "time": "2023-01-06T03:29:39+00:00"
         },
