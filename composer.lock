@@ -147,16 +147,16 @@
         },
         {
             "name": "alleyinteractive/wp-concurrent-remote-requests",
-            "version": "v1.0.1",
+            "version": "v1.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/alleyinteractive/wp-concurrent-remote-requests.git",
-                "reference": "dbc24e29ac39f22627f0e544d704b7412e1fece7"
+                "reference": "404301c975989958e8086542d56df847ae3aacc2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/alleyinteractive/wp-concurrent-remote-requests/zipball/dbc24e29ac39f22627f0e544d704b7412e1fece7",
-                "reference": "dbc24e29ac39f22627f0e544d704b7412e1fece7",
+                "url": "https://api.github.com/repos/alleyinteractive/wp-concurrent-remote-requests/zipball/404301c975989958e8086542d56df847ae3aacc2",
+                "reference": "404301c975989958e8086542d56df847ae3aacc2",
                 "shasum": ""
             },
             "require": {
@@ -202,9 +202,9 @@
             ],
             "support": {
                 "issues": "https://github.com/alleyinteractive/wp-concurrent-remote-requests/issues",
-                "source": "https://github.com/alleyinteractive/wp-concurrent-remote-requests/tree/v1.0.1"
+                "source": "https://github.com/alleyinteractive/wp-concurrent-remote-requests/tree/v1.0.2"
             },
-            "time": "2023-03-24T19:28:58+00:00"
+            "time": "2023-04-11T19:52:47+00:00"
         },
         {
             "name": "alleyinteractive/wp-filter-side-effects",
@@ -669,16 +669,16 @@
         },
         {
             "name": "filp/whoops",
-            "version": "2.15.1",
+            "version": "2.15.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/filp/whoops.git",
-                "reference": "e864ac957acd66e1565f25efda61e37791a5db0b"
+                "reference": "aac9304c5ed61bf7b1b7a6064bf9806ab842ce73"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/filp/whoops/zipball/e864ac957acd66e1565f25efda61e37791a5db0b",
-                "reference": "e864ac957acd66e1565f25efda61e37791a5db0b",
+                "url": "https://api.github.com/repos/filp/whoops/zipball/aac9304c5ed61bf7b1b7a6064bf9806ab842ce73",
+                "reference": "aac9304c5ed61bf7b1b7a6064bf9806ab842ce73",
                 "shasum": ""
             },
             "require": {
@@ -728,7 +728,7 @@
             ],
             "support": {
                 "issues": "https://github.com/filp/whoops/issues",
-                "source": "https://github.com/filp/whoops/tree/2.15.1"
+                "source": "https://github.com/filp/whoops/tree/2.15.2"
             },
             "funding": [
                 {
@@ -736,7 +736,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-03-06T18:09:13+00:00"
+            "time": "2023-04-12T12:00:00+00:00"
         },
         {
             "name": "illuminate/bus",
@@ -1532,16 +1532,16 @@
         },
         {
             "name": "mantle-framework/config",
-            "version": "v0.10.7",
+            "version": "v0.10.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mantle-framework/config.git",
-                "reference": "74ab3f455bdfce0e86aa9a838899554ff2bcd149"
+                "reference": "2c7ed268507de696d3ffb37c52184ecbf5f24d8d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mantle-framework/config/zipball/74ab3f455bdfce0e86aa9a838899554ff2bcd149",
-                "reference": "74ab3f455bdfce0e86aa9a838899554ff2bcd149",
+                "url": "https://api.github.com/repos/mantle-framework/config/zipball/2c7ed268507de696d3ffb37c52184ecbf5f24d8d",
+                "reference": "2c7ed268507de696d3ffb37c52184ecbf5f24d8d",
                 "shasum": ""
             },
             "require": {
@@ -1578,22 +1578,22 @@
             ],
             "description": "The Mantle Framework Config Package",
             "support": {
-                "source": "https://github.com/mantle-framework/config/tree/v0.10.7"
+                "source": "https://github.com/mantle-framework/config/tree/v0.10.8"
             },
-            "time": "2023-01-06T03:29:08+00:00"
+            "time": "2023-04-14T14:10:44+00:00"
         },
         {
             "name": "mantle-framework/container",
-            "version": "v0.10.7",
+            "version": "v0.10.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mantle-framework/container.git",
-                "reference": "8a05c9dccd5e2fce523611b942d4580cc03dc10d"
+                "reference": "edb45ffaad0eeece3f2ba756ae7ccd5b40db7523"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mantle-framework/container/zipball/8a05c9dccd5e2fce523611b942d4580cc03dc10d",
-                "reference": "8a05c9dccd5e2fce523611b942d4580cc03dc10d",
+                "url": "https://api.github.com/repos/mantle-framework/container/zipball/edb45ffaad0eeece3f2ba756ae7ccd5b40db7523",
+                "reference": "edb45ffaad0eeece3f2ba756ae7ccd5b40db7523",
                 "shasum": ""
             },
             "require": {
@@ -1628,22 +1628,22 @@
             ],
             "description": "The Mantle Framework Container Package",
             "support": {
-                "source": "https://github.com/mantle-framework/container/tree/v0.10.7"
+                "source": "https://github.com/mantle-framework/container/tree/v0.10.8"
             },
-            "time": "2023-01-06T03:29:07+00:00"
+            "time": "2023-04-14T14:10:44+00:00"
         },
         {
             "name": "mantle-framework/contracts",
-            "version": "v0.10.7",
+            "version": "v0.10.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mantle-framework/contracts.git",
-                "reference": "d883fc2f5a6fd9c54ed4f232358ba01d3ab672d5"
+                "reference": "1a4dc68d49002d2e947daf63d3c89f9f20187a42"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mantle-framework/contracts/zipball/d883fc2f5a6fd9c54ed4f232358ba01d3ab672d5",
-                "reference": "d883fc2f5a6fd9c54ed4f232358ba01d3ab672d5",
+                "url": "https://api.github.com/repos/mantle-framework/contracts/zipball/1a4dc68d49002d2e947daf63d3c89f9f20187a42",
+                "reference": "1a4dc68d49002d2e947daf63d3c89f9f20187a42",
                 "shasum": ""
             },
             "require": {
@@ -1677,22 +1677,22 @@
             ],
             "description": "The Mantle Framework Contracts Package",
             "support": {
-                "source": "https://github.com/mantle-framework/contracts/tree/v0.10.7"
+                "source": "https://github.com/mantle-framework/contracts/tree/v0.10.8"
             },
-            "time": "2023-03-31T15:34:42+00:00"
+            "time": "2023-04-14T14:10:44+00:00"
         },
         {
             "name": "mantle-framework/database",
-            "version": "v0.10.7",
+            "version": "v0.10.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mantle-framework/database.git",
-                "reference": "43383fd9e2f612fdad9f32d7c8577db8519f4150"
+                "reference": "b6df96d14a04ce0b3a2e8aeb74ecd5ad551524bf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mantle-framework/database/zipball/43383fd9e2f612fdad9f32d7c8577db8519f4150",
-                "reference": "43383fd9e2f612fdad9f32d7c8577db8519f4150",
+                "url": "https://api.github.com/repos/mantle-framework/database/zipball/b6df96d14a04ce0b3a2e8aeb74ecd5ad551524bf",
+                "reference": "b6df96d14a04ce0b3a2e8aeb74ecd5ad551524bf",
                 "shasum": ""
             },
             "require": {
@@ -1727,22 +1727,22 @@
             ],
             "description": "The Mantle Framework Database Package",
             "support": {
-                "source": "https://github.com/mantle-framework/database/tree/v0.10.7"
+                "source": "https://github.com/mantle-framework/database/tree/v0.10.8"
             },
-            "time": "2023-03-31T17:29:25+00:00"
+            "time": "2023-04-14T14:10:43+00:00"
         },
         {
             "name": "mantle-framework/events",
-            "version": "v0.10.7",
+            "version": "v0.10.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mantle-framework/events.git",
-                "reference": "863f2b14d79803d3e59d45f42e4f25b2efdc217d"
+                "reference": "361fac9ecec3db218566fdaf0ec0b5924a0d2a24"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mantle-framework/events/zipball/863f2b14d79803d3e59d45f42e4f25b2efdc217d",
-                "reference": "863f2b14d79803d3e59d45f42e4f25b2efdc217d",
+                "url": "https://api.github.com/repos/mantle-framework/events/zipball/361fac9ecec3db218566fdaf0ec0b5924a0d2a24",
+                "reference": "361fac9ecec3db218566fdaf0ec0b5924a0d2a24",
                 "shasum": ""
             },
             "require": {
@@ -1777,22 +1777,22 @@
             ],
             "description": "The Mantle Framework Events Package",
             "support": {
-                "source": "https://github.com/mantle-framework/events/tree/v0.10.7"
+                "source": "https://github.com/mantle-framework/events/tree/v0.10.8"
             },
-            "time": "2023-01-06T03:29:13+00:00"
+            "time": "2023-04-14T14:10:41+00:00"
         },
         {
             "name": "mantle-framework/faker",
-            "version": "v0.10.7",
+            "version": "v0.10.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mantle-framework/faker.git",
-                "reference": "bdaf0b2cf04fa2423ffd300d1dc7c93ab9d3437b"
+                "reference": "6da1470e18232eefd7c8c1ef1ec5f69b499c11d9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mantle-framework/faker/zipball/bdaf0b2cf04fa2423ffd300d1dc7c93ab9d3437b",
-                "reference": "bdaf0b2cf04fa2423ffd300d1dc7c93ab9d3437b",
+                "url": "https://api.github.com/repos/mantle-framework/faker/zipball/6da1470e18232eefd7c8c1ef1ec5f69b499c11d9",
+                "reference": "6da1470e18232eefd7c8c1ef1ec5f69b499c11d9",
                 "shasum": ""
             },
             "require": {
@@ -1823,22 +1823,22 @@
             ],
             "description": "The Mantle Framework Faker Package",
             "support": {
-                "source": "https://github.com/mantle-framework/faker/tree/v0.10.7"
+                "source": "https://github.com/mantle-framework/faker/tree/v0.10.8"
             },
-            "time": "2023-01-06T03:29:13+00:00"
+            "time": "2023-04-14T14:10:42+00:00"
         },
         {
             "name": "mantle-framework/filesystem",
-            "version": "v0.10.7",
+            "version": "v0.10.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mantle-framework/filesystem.git",
-                "reference": "dc64bca0a7bcec374ec45370dd9b53cb4432f08b"
+                "reference": "839aa2bb020bcd9ebebd0d500af68e17a7d28b55"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mantle-framework/filesystem/zipball/dc64bca0a7bcec374ec45370dd9b53cb4432f08b",
-                "reference": "dc64bca0a7bcec374ec45370dd9b53cb4432f08b",
+                "url": "https://api.github.com/repos/mantle-framework/filesystem/zipball/839aa2bb020bcd9ebebd0d500af68e17a7d28b55",
+                "reference": "839aa2bb020bcd9ebebd0d500af68e17a7d28b55",
                 "shasum": ""
             },
             "require": {
@@ -1875,22 +1875,22 @@
             ],
             "description": "The Mantle Framework Filesystem Package",
             "support": {
-                "source": "https://github.com/mantle-framework/filesystem/tree/v0.10.7"
+                "source": "https://github.com/mantle-framework/filesystem/tree/v0.10.8"
             },
-            "time": "2023-01-06T03:29:12+00:00"
+            "time": "2023-04-14T14:10:40+00:00"
         },
         {
             "name": "mantle-framework/http",
-            "version": "v0.10.7",
+            "version": "v0.10.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mantle-framework/http.git",
-                "reference": "180355758dabe9482cab13fece1a564ed764b63b"
+                "reference": "f7af9d842ec2549b8bbc3cf948879afa56489ba4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mantle-framework/http/zipball/180355758dabe9482cab13fece1a564ed764b63b",
-                "reference": "180355758dabe9482cab13fece1a564ed764b63b",
+                "url": "https://api.github.com/repos/mantle-framework/http/zipball/f7af9d842ec2549b8bbc3cf948879afa56489ba4",
+                "reference": "f7af9d842ec2549b8bbc3cf948879afa56489ba4",
                 "shasum": ""
             },
             "require": {
@@ -1933,22 +1933,22 @@
             ],
             "description": "The Mantle Framework Http Package",
             "support": {
-                "source": "https://github.com/mantle-framework/http/tree/v0.10.7"
+                "source": "https://github.com/mantle-framework/http/tree/v0.10.8"
             },
-            "time": "2023-01-06T03:29:07+00:00"
+            "time": "2023-04-14T14:10:46+00:00"
         },
         {
             "name": "mantle-framework/http-client",
-            "version": "v0.10.7",
+            "version": "v0.10.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mantle-framework/http-client.git",
-                "reference": "230cdc52e47730e416e5618f0a2ae1ae552b11fd"
+                "reference": "6ba8a0ccda5b70c7bf7e826ad6324f488c9ae69c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mantle-framework/http-client/zipball/230cdc52e47730e416e5618f0a2ae1ae552b11fd",
-                "reference": "230cdc52e47730e416e5618f0a2ae1ae552b11fd",
+                "url": "https://api.github.com/repos/mantle-framework/http-client/zipball/6ba8a0ccda5b70c7bf7e826ad6324f488c9ae69c",
+                "reference": "6ba8a0ccda5b70c7bf7e826ad6324f488c9ae69c",
                 "shasum": ""
             },
             "require": {
@@ -1979,22 +1979,22 @@
             ],
             "description": "The Mantle Framework Http Client Package",
             "support": {
-                "source": "https://github.com/mantle-framework/http-client/tree/v0.10.7"
+                "source": "https://github.com/mantle-framework/http-client/tree/v0.10.8"
             },
-            "time": "2023-01-06T03:29:28+00:00"
+            "time": "2023-04-14T14:10:40+00:00"
         },
         {
             "name": "mantle-framework/support",
-            "version": "v0.10.7",
+            "version": "v0.10.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mantle-framework/support.git",
-                "reference": "cab864693f889b1ca3e52779b0cb98bac552ff58"
+                "reference": "a60ae37ee164a87f77fb719ee59cd46352df6e44"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mantle-framework/support/zipball/cab864693f889b1ca3e52779b0cb98bac552ff58",
-                "reference": "cab864693f889b1ca3e52779b0cb98bac552ff58",
+                "url": "https://api.github.com/repos/mantle-framework/support/zipball/a60ae37ee164a87f77fb719ee59cd46352df6e44",
+                "reference": "a60ae37ee164a87f77fb719ee59cd46352df6e44",
                 "shasum": ""
             },
             "require": {
@@ -2040,22 +2040,22 @@
             ],
             "description": "The Mantle Framework Support Package",
             "support": {
-                "source": "https://github.com/mantle-framework/support/tree/v0.10.7"
+                "source": "https://github.com/mantle-framework/support/tree/v0.10.8"
             },
-            "time": "2023-01-10T15:51:06+00:00"
+            "time": "2023-04-14T14:11:02+00:00"
         },
         {
             "name": "mantle-framework/testing",
-            "version": "v0.10.7",
+            "version": "v0.10.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mantle-framework/testing.git",
-                "reference": "dcd8189eed85dfea6112c16e6dadf95b571edcdb"
+                "reference": "4c565c0a2cd4bb105b451275e27e37516cb563c0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mantle-framework/testing/zipball/dcd8189eed85dfea6112c16e6dadf95b571edcdb",
-                "reference": "dcd8189eed85dfea6112c16e6dadf95b571edcdb",
+                "url": "https://api.github.com/repos/mantle-framework/testing/zipball/4c565c0a2cd4bb105b451275e27e37516cb563c0",
+                "reference": "4c565c0a2cd4bb105b451275e27e37516cb563c0",
                 "shasum": ""
             },
             "require": {
@@ -2106,22 +2106,22 @@
                 "testing"
             ],
             "support": {
-                "source": "https://github.com/mantle-framework/testing/tree/v0.10.7"
+                "source": "https://github.com/mantle-framework/testing/tree/v0.10.8"
             },
-            "time": "2023-04-04T18:34:04+00:00"
+            "time": "2023-04-14T14:11:06+00:00"
         },
         {
             "name": "mantle-framework/testkit",
-            "version": "v0.10.7",
+            "version": "v0.10.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mantle-framework/testkit.git",
-                "reference": "1caea6e544f98b3b5262ae596312db329963f5b9"
+                "reference": "e380d0474a8693946a69d382436468bf7983714f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mantle-framework/testkit/zipball/1caea6e544f98b3b5262ae596312db329963f5b9",
-                "reference": "1caea6e544f98b3b5262ae596312db329963f5b9",
+                "url": "https://api.github.com/repos/mantle-framework/testkit/zipball/e380d0474a8693946a69d382436468bf7983714f",
+                "reference": "e380d0474a8693946a69d382436468bf7983714f",
                 "shasum": ""
             },
             "require": {
@@ -2164,9 +2164,9 @@
                 "testing"
             ],
             "support": {
-                "source": "https://github.com/mantle-framework/testkit/tree/v0.10.7"
+                "source": "https://github.com/mantle-framework/testkit/tree/v0.10.8"
             },
-            "time": "2023-01-06T03:29:39+00:00"
+            "time": "2023-04-14T14:11:04+00:00"
         },
         {
             "name": "monolog/monolog",
@@ -3265,16 +3265,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "9.6.6",
+            "version": "9.6.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "b65d59a059d3004a040c16a82e07bbdf6cfdd115"
+                "reference": "c993f0d3b0489ffc42ee2fe0bd645af1538a63b2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/b65d59a059d3004a040c16a82e07bbdf6cfdd115",
-                "reference": "b65d59a059d3004a040c16a82e07bbdf6cfdd115",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/c993f0d3b0489ffc42ee2fe0bd645af1538a63b2",
+                "reference": "c993f0d3b0489ffc42ee2fe0bd645af1538a63b2",
                 "shasum": ""
             },
             "require": {
@@ -3348,7 +3348,7 @@
             "support": {
                 "issues": "https://github.com/sebastianbergmann/phpunit/issues",
                 "security": "https://github.com/sebastianbergmann/phpunit/security/policy",
-                "source": "https://github.com/sebastianbergmann/phpunit/tree/9.6.6"
+                "source": "https://github.com/sebastianbergmann/phpunit/tree/9.6.7"
             },
             "funding": [
                 {
@@ -3364,7 +3364,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-03-27T11:43:46+00:00"
+            "time": "2023-04-14T08:58:40+00:00"
         },
         {
             "name": "psr/cache",
