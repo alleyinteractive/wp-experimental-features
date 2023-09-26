@@ -238,10 +238,10 @@ class Options {
 							// the current URL.
 							! $enabled ? [
 								'experimental-feature-disable' => null,
-								'experimental-feature-enable'  => $feature,
+								'experimental-feature-enable'  => str_replace( '\\', '%5C', $feature ),
 							] : [],
 							$enabled ? [
-								'experimental-feature-disable' => $feature,
+								'experimental-feature-disable' => str_replace( '\\', '%5C', $feature ),
 								'experimental-feature-enable'  => null,
 							] : [],
 						),
