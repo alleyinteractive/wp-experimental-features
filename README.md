@@ -121,9 +121,9 @@ status of all feature flags on the site.
 
 ```json
 {
-	my-cool-feature: {
-		label: "My Cool Feature",
-		status: false
+	"my-cool-feature": {
+		"label": "My Cool Feature",
+		"status": false
 	}
 }
 ```
