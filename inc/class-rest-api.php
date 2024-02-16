@@ -80,7 +80,13 @@ class REST_API {
 			array_map(
 				fn ( $flag, $label ) => [
 					'label'  => $label,
-					'status' => get_feature_status( $flag ),
+					/**
+					 * Filter the status of an experimental feature.
+					 *
+					 * @param boolean $default The default status of the feature.
+					 * @param string  $flag    The feature flag to retrieve.
+					 */
+					'status' => (bool) apply_filters( 'experimental_features_flag', false, $flag ),
 				],
 				array_keys( $features ),
 				$features,
