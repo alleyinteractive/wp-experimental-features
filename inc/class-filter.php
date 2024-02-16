@@ -90,7 +90,7 @@ class Filter {
 	/**
 	 * Defines a filter function for the available feature flags.
 	 *
-	 * @return array The available feature flags.
+	 * @return array<string, string> The available feature flags. Keys are feature slugs, values are feature labels.
 	 */
 	public static function flags(): array {
 		/**
