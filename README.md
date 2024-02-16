@@ -111,3 +111,53 @@ add_action( 'experimental_features_flag_enabled_{feature-flag}', function() { ..
 ```php
 add_action( 'experimental_features_flag_disabled_{feature-flag}', function() { ... } );
 ```
+
+### Retrieving Feature Flag Status in the REST API.
+
+The status of feature flags can be retrieved via the REST API. The endpoint
+`/wp-json/experimental-features/v1/features` will return a JSON object with the
+status of all feature flags on the site.
+
+
+```json
+{
+	my-cool-feature: {
+		label: "My Cool Feature",
+		status: false
+	}
+}
+```
+
+By default, this is disabled. To enable it, use the following filter:
+
+```php
+add_filter( 'experimental_features_rest_api_enabled', '__return_true' );
+```
+
+The default permissions for accessing the REST API endpoint would be for all
+users. To restrict access you can filter the permissions callback to retrieve it
+to your needs:
+
+```php
+add_filter(
+	'experimental_features_rest_permission_callback',
+	function () {
+		return current_user_can( 'manage_options' );
+	},
+);
+```
+
+## Changelog
+
+Please see [CHANGELOG](CHANGELOG.md) for more information on what has changed recently.
+
+## Credits
+
+This project is actively maintained by [Alley
+Interactive](https://github.com/alleyinteractive).
+
+- [All Contributors](../../contributors)
+
+## License
+
+The GNU General Public License (GPL) license. Please see [License File](LICENSE) for more information.

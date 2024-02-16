@@ -32,7 +32,7 @@ class REST_API {
 		 *
 		 * @param bool $register_rest_route Whether to register the REST API route.
 		 */
-		if ( ! apply_filters( 'experimental_features_register_rest_route', false ) ) {
+		if ( ! apply_filters( 'experimental_features_rest_api_enabled', false ) ) {
 			return;
 		}
 
