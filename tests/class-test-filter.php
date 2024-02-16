@@ -18,6 +18,15 @@ use Mantle\Testkit\Test_Case;
  */
 class Test_Filter extends Test_Case {
 	/**
+	 * Set up the test case.
+	 */
+	protected function setUp(): void {
+		parent::setUp();
+
+		update_option( 'experimental_features_flags', [] );
+	}
+
+	/**
 	 * Test the process of defining a filter flag and retrieving its value.
 	 */
 	public function test_feature_flag() {
