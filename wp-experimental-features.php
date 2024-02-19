@@ -20,3 +20,4 @@ require_once __DIR__ . '/autoloader.php';
 // Initialize functionality.
 Filter::init();
 Options::init();
+REST_API::init();

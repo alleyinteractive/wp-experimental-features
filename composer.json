@@ -15,16 +15,13 @@
     "source": "https://github.com/alleyinteractive/wp-experimental-features"
   },
   "require-dev": {
-    "alleyinteractive/alley-coding-standards": "^1.0",
-    "mantle-framework/testkit": "^0.11"
+    "alleyinteractive/alley-coding-standards": "^2.0",
+    "mantle-framework/testkit": "^0.12"
   },
   "config": {
     "allow-plugins": {
       "dealerdirect/phpcodesniffer-composer-installer": true,
       "alleyinteractive/composer-wordpress-autoloader": true
-    },
-    "platform": {
-      "php": "8.0.26"
     }
   },
   "scripts": {

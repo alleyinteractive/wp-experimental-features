@@ -5,14 +5,12 @@ on:
     branches:
       - develop
   pull_request:
-  schedule:
-    - cron: '0 0 * * *'
 
 jobs:
   php-tests:
     strategy:
       matrix:
-        php: [8.0]
+        php: [8.2]
         wordpress: ["latest"]
         multisite: [true, false]
     uses: alleyinteractive/.github/.github/workflows/php-tests.yml@main
