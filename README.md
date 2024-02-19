@@ -128,7 +128,7 @@ status of all feature flags on the site.
 }
 ```
 
-By default, this is disabled. To enable it, use the following filter:
+**By default, this is disabled.** To enable it, use the following filter:
 
 ```php
 add_filter( 'experimental_features_rest_api_enabled', '__return_true' );
@@ -144,6 +144,25 @@ add_filter(
 	function () {
 		return current_user_can( 'manage_options' );
 	},
+);
+```
+
+All feature flags will appear on the endpoint by default. This can be filtered
+using the `experimental_features_rest_api_flags` filter:
+
+```php
+add_filter(
+	'experimental_features_rest_api_flags',
+	function ( $flags ) {
+		return array_filter(
+			$flags,
+			 function ( $flag ) {
+				// Only return the 'my-cool-feature' flag.
+				return 'my-cool-feature' === $flag;
+			},
+			ARRAY_FILTER_USE_KEY
+		);
+	}
 );
 ```
 

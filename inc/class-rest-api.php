@@ -73,7 +73,12 @@ class REST_API {
 	 * Handles the REST API request.
 	 */
 	public static function handle_request(): array {
-		$features = Filter::flags();
+		/**
+		 * Filter the experimental features flags that are available in the REST API.
+		 *
+		 * @param array $flags The experimental features flags.
+		 */
+		$features = (array) apply_filters( 'experimental_features_rest_api_flags', Filter::flags() );
 
 		return array_combine(
 			array_keys( $features ),

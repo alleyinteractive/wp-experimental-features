@@ -33,13 +33,14 @@ class Test_REST_API extends Test_Case {
 		add_filter( 'experimental_features_rest_api_enabled', '__return_true' );
 
 		$this->expectApplied( 'experimental_features_rest_api_enabled' )->once()->andReturnTrue();
+		$this->expectApplied( 'experimental_features_rest_api_flags' )->once()->andReturnArray();
 
 		// Register a feature.
 		add_filter(
 			'experimental_features_flags',
 			fn () => [
 				'feature' => 'Feature',
-			] 
+			]
 		);
 
 		$this->get( '/wp-json/experimental-features/v1/features' )
@@ -50,7 +51,7 @@ class Test_REST_API extends Test_Case {
 						'label',
 						'status',
 					],
-				] 
+				]
 			)
 			->assertJsonPath( 'feature.status', false );
 
