@@ -33,7 +33,7 @@ class Test_REST_API extends Test_Case {
 		add_filter( 'experimental_features_rest_api_enabled', '__return_true' );
 
 		$this->expectApplied( 'experimental_features_rest_api_enabled' )->once()->andReturnTrue();
-		$this->expectApplied( 'experimental_features_rest_api_flags' )->once()->andReturnArray();
+		$this->expectApplied( 'experimental_features_rest_api_flags' )->twice()->andReturnArray();
 
 		// Register a feature.
 		add_filter(
