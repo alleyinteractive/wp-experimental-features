@@ -56,7 +56,7 @@ class CLI {
 		$flags = Filter::flags();
 
 		if ( ! isset( $flags[ $feature ] ) ) {
-			WP_CLI::error( "Unknown feature: {$feature}. Use `wp experimental-features list` to see available features. Ensure you are passing the feature slug." );
+			WP_CLI::error( "Unknown feature: {$feature}. Use `wp experimental-features list` to see available features. Be sure that you are passing the feature slug and not the feature label." );
 		}
 
 		if ( Filter::enable_flag( $feature ) ) {
@@ -81,7 +81,7 @@ class CLI {
 		$flags = Filter::flags();
 
 		if ( ! isset( $flags[ $feature ] ) ) {
-			WP_CLI::error( "Unknown feature: {$feature}. Use `wp experimental-features list` to see available features. Ensure you are passing the feature slug." );
+			WP_CLI::error( "Unknown feature: {$feature}. Use `wp experimental-features list` to see available features. Be sure that you are passing the feature slug and not the feature label." );
 		}
 
 		if ( Filter::disable_flag( $feature ) ) {
@@ -106,7 +106,7 @@ class CLI {
 		$flags = Filter::flags();
 
 		if ( ! isset( $flags[ $feature ] ) ) {
-			WP_CLI::error( "Unknown feature: {$feature}. Use `wp experimental-features list` to see available features. Ensure you are passing the feature slug." );
+			WP_CLI::error( "Unknown feature: {$feature}. Use `wp experimental-features list` to see available features. Be sure that you are passing the feature slug and not the feature label." );
 		}
 
 		if ( ! Filter::toggle_flag( $feature ) ) {
