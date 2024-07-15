@@ -14,6 +14,25 @@ namespace Experimental_Features;
  */
 class Filter {
 	/**
+	 * Initializes functionality by setting up action and filter hooks.
+	 */
+	public static function init(): void {
+		add_filter(
+			'experimental_features_flag',
+			[ self::class, 'filter_experimental_features_flag' ],
+			10,
+			2
+		);
+
+		add_action(
+			'update_option_experimental_features_flags',
+			[ static::class, 'filter_option_updated' ],
+			10,
+			2,
+		);
+	}
+
+	/**
 	 * Defines a filter function for the capability required to turn experimental features on and off.
 	 *
 	 * @return string The capability required to turn experimental features on and off. Defaults to `manage_options`.
@@ -90,7 +109,7 @@ class Filter {
 	/**
 	 * Defines a filter function for the available feature flags.
 	 *
-	 * @return array The available feature flags.
+	 * @return array<string, string> The available feature flags. Keys are feature slugs, values are feature labels.
 	 */
 	public static function flags(): array {
 		/**
@@ -185,24 +204,5 @@ class Filter {
 		}
 
 		return (bool) update_option( 'experimental_features_flags', $setting );
-	}
-
-	/**
-	 * Initializes functionality by setting up action and filter hooks.
-	 */
-	public static function init() {
-		add_filter(
-			'experimental_features_flag',
-			[ self::class, 'filter_experimental_features_flag' ],
-			10,
-			2
-		);
-
-		add_action(
-			'update_option_experimental_features_flags',
-			[ static::class, 'filter_option_updated' ],
-			10,
-			2,
-		);
 	}
 }

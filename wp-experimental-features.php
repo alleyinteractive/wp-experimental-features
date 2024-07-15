@@ -20,3 +20,8 @@ require_once __DIR__ . '/autoloader.php';
 // Initialize functionality.
 Filter::init();
 Options::init();
+REST_API::init();
+
+if ( defined( 'WP_CLI' ) && WP_CLI ) {
+	require_once __DIR__ . '/inc/class-cli.php';
+}

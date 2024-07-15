@@ -20,7 +20,7 @@ class Partials {
 	 * @param string $slug The partial filepath to the partial template.
 	 * @param array  $args Optional. Arguments to pass to the template part.
 	 */
-	public static function load( string $slug, array $args = [] ) { // phpcs:ignore VariableAnalysis.CodeAnalysis.VariableAnalysis.UnusedVariable
+	public static function load( string $slug, array $args = [] ) { // phpcs:ignore Generic.CodeAnalysis.UnusedFunctionParameter.FoundAfterLastUsed
 
 		// Ensure requested partial exists.
 		$filepath = dirname( __DIR__ ) . '/partials/' . $slug . '.php';
