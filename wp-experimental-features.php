@@ -5,9 +5,9 @@
  * Plugin Name: Experimental Features
  * Plugin URI:  https://github.com/alleyinteractive/wp-experimental-features
  * Description: Turn experimental features on and off via a checkbox in the admin.
- * Version:     1.2.0
+ * Version:     1.3.2
  * Author:      Alley
- * Author URI:  https://alley.co
+ * Author URI:  https://alley.com
  *
  * @package Experimental_Features
  */
