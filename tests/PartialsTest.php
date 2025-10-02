@@ -8,7 +8,9 @@
 
 namespace Experimental_Features;
 
-use Mantle\Testkit\Test_Case;
+use Mantle\Testkit\TestCase;
+
+use function Mantle\Support\Helpers\capture;
 
 require_once ABSPATH . 'wp-admin/includes/admin.php';
 
@@ -18,15 +20,13 @@ require_once ABSPATH . 'wp-admin/includes/admin.php';
  * @package Experimental_Features
  * @subpackage Tests
  */
-class PartialsTest extends Test_Case {
+class PartialsTest extends TestCase {
 
 	/**
 	 * Tests loading a partial.
 	 */
 	public function test_load() {
-		ob_start();
-		Partials::load( 'options-page' );
-		$result = ob_get_clean();
+		$result = capture( fn () => Partials::load( 'options-page' ) );
 		$this->assertNotFalse( strpos( $result, '<form id="experimental-features-config"' ) );
 	}
 }

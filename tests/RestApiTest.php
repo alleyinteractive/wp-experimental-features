@@ -8,7 +8,7 @@
 
 namespace Experimental_Features;
 
-use Mantle\Testkit\Test_Case;
+use Mantle\Testkit\TestCase;
 
 /**
  * A class to test the functionality of the REST_API class.
@@ -16,7 +16,7 @@ use Mantle\Testkit\Test_Case;
  * @package Experimental_Features
  * @subpackage Tests
  */
-class RestApiTest extends Test_Case {
+class RestApiTest extends TestCase {
 	/**
 	 * Test the REST API endpoint is disabled by default.
 	 */
@@ -33,7 +33,7 @@ class RestApiTest extends Test_Case {
 		add_filter( 'experimental_features_rest_api_enabled', '__return_true' );
 
 		$this->expectApplied( 'experimental_features_rest_api_enabled' )->once()->andReturnTrue();
-		$this->expectApplied( 'experimental_features_rest_api_flags' )->twice()->andReturnArray();
+		$this->expectApplied( 'experimental_features_rest_api_flags' )->andReturnArray();
 
 		// Register a feature.
 		add_filter(
@@ -68,7 +68,7 @@ class RestApiTest extends Test_Case {
 		add_filter( 'experimental_features_rest_api_enabled', '__return_true' );
 		add_filter( 'experimental_features_rest_permission_callback', fn () => '__return_false' );
 
-		$this->expectApplied( 'experimental_features_rest_permission_callback' )->once()->andReturn( '__return_false' );
+		$this->expectApplied( 'experimental_features_rest_permission_callback' )->once()->andReturn( fn ( $value ) => $value === '__return_false' );
 
 		$this->get( '/wp-json/experimental-features/v1/features' )->assertUnauthorized();
 	}

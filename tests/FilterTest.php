@@ -8,7 +8,7 @@
 
 namespace Experimental_Features;
 
-use Mantle\Testkit\Test_Case;
+use Mantle\Testkit\TestCase;
 
 /**
  * A class to test the functionality of the Filter class.
@@ -16,7 +16,7 @@ use Mantle\Testkit\Test_Case;
  * @package Experimental_Features
  * @subpackage Tests
  */
-class FilterTest extends Test_Case {
+class FilterTest extends TestCase {
 	/**
 	 * Set up the test case.
 	 */

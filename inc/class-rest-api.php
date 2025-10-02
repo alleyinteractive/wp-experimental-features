@@ -17,10 +17,7 @@ class REST_API {
 	 * Initializes functionality by setting up action and filter hooks.
 	 */
 	public static function init(): void {
-		add_action(
-			'rest_api_init',
-			[ self::class, 'action__rest_api_init' ]
-		);
+		add_action( 'rest_api_init', [ self::class, 'action__rest_api_init' ] );
 	}
 
 	/**
