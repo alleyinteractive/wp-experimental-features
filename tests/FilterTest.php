@@ -16,7 +16,7 @@ use Mantle\Testkit\Test_Case;
  * @package Experimental_Features
  * @subpackage Tests
  */
-class Test_Filter extends Test_Case {
+class FilterTest extends Test_Case {
 	/**
 	 * Set up the test case.
 	 */

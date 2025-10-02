@@ -16,7 +16,7 @@ use Mantle\Testkit\Test_Case;
  * @package Experimental_Features
  * @subpackage Tests
  */
-class Test_REST_API extends Test_Case {
+class RestApiTest extends Test_Case {
 	/**
 	 * Test the REST API endpoint is disabled by default.
 	 */
