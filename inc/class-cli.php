@@ -26,7 +26,6 @@ class CLI {
 		}
 
 		foreach ( $flags as $flag => $label ) {
-			$flag = WP_CLI::colorize( '%B' . $flag . '%n' );
 
 			/**
 			 * Filters the status of an experimental feature.
@@ -37,7 +36,7 @@ class CLI {
 				? WP_CLI::colorize( '%Genabled%n' )
 				: WP_CLI::colorize( '%Rdisabled%n' );
 
-			WP_CLI::line( "{$label} ({$flag}): {$status}" );
+			WP_CLI::line( "{$label} (" . WP_CLI::colorize( '%B' . $flag . '%n' ) . "): {$status}" );
 		}
 
 		return 0;
@@ -48,7 +47,7 @@ class CLI {
 	 *
 	 * @synopsis <feature>
 	 *
-	 * @param array $args The feature slug.
+	 * @param array<int, string> $args The feature slug.
 	 */
 	public function enable( array $args ): int {
 		[ $feature ] = $args;
@@ -73,7 +72,7 @@ class CLI {
 	 *
 	 * @synopsis <feature>
 	 *
-	 * @param array $args The feature to disable.
+	 * @param array<int, string> $args The feature to disable.
 	 */
 	public function disable( array $args ): int {
 		[ $feature ] = $args;
@@ -98,7 +97,7 @@ class CLI {
 	 *
 	 * @synopsis <feature>
 	 *
-	 * @param array $args The feature to toggle.
+	 * @param array<int, string> $args The feature to toggle.
 	 */
 	public function toggle( array $args ): int {
 		[ $feature ] = $args;

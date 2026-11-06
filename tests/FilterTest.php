@@ -33,7 +33,7 @@ class FilterTest extends TestCase {
 		// Define the feature flags via filter.
 		add_filter(
 			'experimental_features_flags',
-			function ( array $flags ): array {
+			function ( $flags ): array {
 				$flags['my-cool-feature'] = 'My Cool Feature';
 				return $flags;
 			}

@@ -16,7 +16,7 @@ class Options {
 	/**
 	 * Registers settings fields.
 	 */
-	public static function action_admin_init() {
+	public static function action_admin_init(): void {
 		// Define fields to register.
 		$fields = [
 			'experimental_features_flags' => [
@@ -61,7 +61,7 @@ class Options {
 	/**
 	 * Adds the options page to the Settings menu.
 	 */
-	public static function action_admin_menu() {
+	public static function action_admin_menu(): void {
 		add_options_page(
 			esc_html__( 'Experimental Features', 'experimental-features' ),
 			esc_html__( 'Experimental Features', 'experimental-features' ),
@@ -74,7 +74,7 @@ class Options {
 	/**
 	 * Initializes functionality by setting up action and filter hooks.
 	 */
-	public static function init() {
+	public static function init(): void {
 		add_action(
 			'admin_init',
 			[ self::class, 'action_admin_init' ]
@@ -93,9 +93,9 @@ class Options {
 	/**
 	 * Renders a field for an option.
 	 *
-	 * @param array $args Field arguments.
+	 * @param array{field_name: string, label_for: string} $args Field arguments.
 	 */
-	public static function render_field( array $args ) {
+	public static function render_field( array $args ): void {
 
 		// Get the un-namespaced field name.
 		$field_name = str_replace( 'experimental_features_', '', $args['field_name'] );
@@ -124,24 +124,24 @@ class Options {
 	/**
 	 * Renders the options page.
 	 */
-	public static function render_options_page() {
+	public static function render_options_page(): void {
 		Partials::load( 'options-page' );
 	}
 
 	/**
 	 * Sanitizes an array of feature flags.
 	 *
-	 * @param ?array $option_value The array of feature flag slugs to sanitize.
-	 * @return array The sanitized array.
+	 * @param ?array<mixed> $option_value The array of feature flag slugs to sanitize.
+	 * @return array<string> The sanitized array.
 	 */
 	public static function sanitize_flags( ?array $option_value ): array {
-		return array_map( 'sanitize_text_field', null === $option_value ? [] : $option_value );
+		return array_map( 'sanitize_text_field', array_filter( $option_value ?? [], 'is_string' ) );
 	}
 
 	/**
 	 * Register the admin bar menu.
 	 */
-	public static function register_admin_bar_menu() {
+	public static function register_admin_bar_menu(): void {
 		if ( ! static::should_include_admin_bar() ) {
 			return;
 		}
@@ -167,19 +167,19 @@ class Options {
 	/**
 	 * Handle the request to toggle a feature via the admin bar.
 	 */
-	public static function handle_toggle_request() {
+	public static function handle_toggle_request(): void {
 		if ( empty( $_GET['experimental-feature-nonce'] ) ) {
 			return;
 		}
 
-		check_admin_referer( 'experimental-features', 'experimental-feature-nonce', 'experimental-features' );
+		check_admin_referer( 'experimental-features', 'experimental-feature-nonce' );
 
 		$disabled = false;
 		$enabled  = false;
 
-		if ( ! empty( $_GET['experimental-feature-enable'] ) ) {
+		if ( ! empty( $_GET['experimental-feature-enable'] ) && is_string( $_GET['experimental-feature-enable'] ) ) {
 			$enabled = Filter::enable_flag( sanitize_text_field( wp_unslash( $_GET['experimental-feature-enable'] ) ) );
-		} elseif ( ! empty( $_GET['experimental-feature-disable'] ) ) {
+		} elseif ( ! empty( $_GET['experimental-feature-disable'] ) && is_string( $_GET['experimental-feature-disable'] ) ) {
 			$disabled = Filter::disable_flag( sanitize_text_field( wp_unslash( $_GET['experimental-feature-disable'] ) ) );
 		}
 
@@ -204,12 +204,12 @@ class Options {
 	 *
 	 * @global WP_Admin_Bar $wp_admin_bar.
 	 */
-	public static function action_admin_bar_menu() {
+	public static function action_admin_bar_menu(): void {
 		global $wp_admin_bar;
 
 		$features = Filter::flags();
 
-		if ( empty( $features ) ) {
+		if ( empty( $features ) || ! $wp_admin_bar instanceof \WP_Admin_Bar ) {
 			return;
 		}
 
