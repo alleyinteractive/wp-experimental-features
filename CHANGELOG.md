@@ -8,6 +8,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## Unreleased
 
 - Migrated tests to PSR-4.
+- Require PHP 8.4 and WordPress 6.5 or later.
+- Fixed `wp experimental-features list` always reporting features as disabled.
+- Added PHPStan at level max.
 
 ## 1.3.1 - 2024-03-01
 
