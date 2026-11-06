@@ -28,8 +28,8 @@
     <!-- Exclude the Composer vendor directory. -->
     <exclude-pattern>vendor/</exclude-pattern>
 
-    <!-- The version set here matches the minimum version tested in buddy.yml. -->
-    <config name="minimum_supported_wp_version" value="5.8" />
+    <!-- The version set here matches the minimum version tested in tests. -->
+    <config name="minimum_supported_wp_version" value="6.5" />
 
     <rule ref="WordPress.NamingConventions.PrefixAllGlobals">
         <exclude-pattern>partials/</exclude-pattern>
