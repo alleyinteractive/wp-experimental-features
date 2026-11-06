@@ -8,6 +8,9 @@
  * Version:     1.3.2
  * Author:      Alley
  * Author URI:  https://alley.com
+ * Requires at least: 6.5
+ * Requires PHP: 8.4
+ * Tested up to: 7.1
  *
  * @package Experimental_Features
  */
