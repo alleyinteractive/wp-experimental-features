@@ -17,10 +17,10 @@ class Partials {
 	/**
 	 * A helper function for loading partials.
 	 *
-	 * @param string $slug The partial filepath to the partial template.
-	 * @param array  $args Optional. Arguments to pass to the template part.
+	 * @param string               $slug The partial filepath to the partial template.
+	 * @param array<string, mixed> $args Optional. Arguments to pass to the template part.
 	 */
-	public static function load( string $slug, array $args = [] ) { // phpcs:ignore Generic.CodeAnalysis.UnusedFunctionParameter.FoundAfterLastUsed
+	public static function load( string $slug, array $args = [] ): void { // phpcs:ignore Generic.CodeAnalysis.UnusedFunctionParameter.FoundAfterLastUsed
 
 		// Ensure requested partial exists.
 		$filepath = dirname( __DIR__ ) . '/partials/' . $slug . '.php';

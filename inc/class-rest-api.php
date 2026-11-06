@@ -23,7 +23,7 @@ class REST_API {
 	/**
 	 * Registers the REST API route.
 	 */
-	public static function action__rest_api_init() {
+	public static function action__rest_api_init(): void {
 		/**
 		 * Filter if the REST API route should be registered. Default is false.
 		 *
@@ -68,31 +68,32 @@ class REST_API {
 
 	/**
 	 * Handles the REST API request.
+	 *
+	 * @return array<string, array{label: string, status: bool}>
 	 */
 	public static function handle_request(): array {
 		/**
 		 * Filter the experimental features flags that are available in the REST API.
 		 *
-		 * @param array $flags The experimental features flags.
+		 * @param array<string, string> $flags The experimental features flags.
 		 */
 		$features = (array) apply_filters( 'experimental_features_rest_api_flags', Filter::flags() );
 
-		return array_combine(
-			array_keys( $features ),
-			array_map(
-				fn ( $flag, $label ) => [
-					'label'  => $label,
-					/**
-					 * Filter the status of an experimental feature.
-					 *
-					 * @param boolean $default The default status of the feature.
-					 * @param string  $flag    The feature flag to retrieve.
-					 */
-					'status' => (bool) apply_filters( 'experimental_features_flag', false, $flag ),
-				],
-				array_keys( $features ),
-				$features,
-			),
-		);
+		$response = [];
+
+		foreach ( $features as $flag => $label ) {
+			$response[ $flag ] = [
+				'label'  => $label,
+				/**
+				 * Filter the status of an experimental feature.
+				 *
+				 * @param boolean $default The default status of the feature.
+				 * @param string  $flag    The feature flag to retrieve.
+				 */
+				'status' => (bool) apply_filters( 'experimental_features_flag', false, $flag ),
+			];
+		}
+
+		return $response;
 	}
 }

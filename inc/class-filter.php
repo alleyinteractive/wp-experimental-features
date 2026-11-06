@@ -52,18 +52,16 @@ class Filter {
 	 * This filter should be used in plugins and themes to check if a
 	 * particular feature flag is enabled or not.
 	 *
-	 * @param bool   $default The default value for the feature flag. Typically, this is false.
-	 * @param string $slug    The feature flag slug to look up.
+	 * @param mixed $default The default value for the feature flag. Typically, this is false.
+	 * @param mixed $slug    The feature flag slug to look up.
 	 * @return bool Whether the given feature flag is active or not.
 	 */
-	public static function filter_experimental_features_flag( bool $default, string $slug ): bool {
-		$option_value = get_option( 'experimental_features_flags', [] );
+	public static function filter_experimental_features_flag( $default, $slug ): bool {
+		if ( is_string( $slug ) && in_array( $slug, self::enabled_flags(), true ) ) {
+			return true;
+		}
 
-		return ! empty( $option_value )
-			&& is_array( $option_value )
-			&& in_array( $slug, $option_value, true )
-				? true
-				: $default;
+		return (bool) $default;
 	}
 
 	/**
@@ -71,11 +69,13 @@ class Filter {
 	 *
 	 * @param mixed $old_value Old value.
 	 * @param mixed $value New value.
-	 * @return void
 	 */
-	public static function filter_option_updated( $old_value, $value ) {
-		$enabled  = array_diff( (array) $value, (array) $old_value );
-		$disabled = array_diff( (array) $old_value, (array) $value );
+	public static function filter_option_updated( $old_value, $value ): void {
+		$old_value = self::to_slugs( $old_value );
+		$value     = self::to_slugs( $value );
+
+		$enabled  = array_diff( $value, $old_value );
+		$disabled = array_diff( $old_value, $value );
 
 		if ( ! empty( $enabled ) || ! empty( $disabled ) ) {
 			/**
@@ -119,7 +119,7 @@ class Filter {
 		 * should return an associative array where the feature slug is the key
 		 * and the feature label is the value.
 		 *
-		 * @param array $flags Available feature flags for this site. Keys are feature slugs, values are feature labels.
+		 * @param array<string, string> $flags Available feature flags for this site. Keys are feature slugs, values are feature labels.
 		 */
 		return apply_filters( 'experimental_features_flags', [] );
 	}
@@ -137,7 +137,7 @@ class Filter {
 			return false;
 		}
 
-		$setting = get_option( 'experimental_features_flags', [] );
+		$setting = self::enabled_flags();
 
 		if ( ! in_array( $flag, $setting, true ) ) {
 			$setting[] = $flag;
@@ -161,15 +161,10 @@ class Filter {
 			return false;
 		}
 
-		$setting = get_option( 'experimental_features_flags', [] );
+		$setting = self::enabled_flags();
 
 		if ( in_array( $flag, $setting, true ) ) {
-			$setting = array_diff(
-				$setting,
-				[
-					$flag,
-				]
-			);
+			$setting = array_values( array_diff( $setting, [ $flag ] ) );
 
 			return (bool) update_option( 'experimental_features_flags', $setting );
 		}
@@ -190,19 +185,33 @@ class Filter {
 			return false;
 		}
 
-		$setting = get_option( 'experimental_features_flags', [] );
+		$setting = self::enabled_flags();
 
 		if ( in_array( $flag, $setting, true ) ) {
-			$setting = array_diff(
-				$setting,
-				[
-					$flag,
-				]
-			);
+			$setting = array_values( array_diff( $setting, [ $flag ] ) );
 		} else {
 			$setting[] = $flag;
 		}
 
 		return (bool) update_option( 'experimental_features_flags', $setting );
+	}
+
+	/**
+	 * Get the slugs of the feature flags that are currently enabled.
+	 *
+	 * @return array<int, string>
+	 */
+	private static function enabled_flags(): array {
+		return self::to_slugs( get_option( 'experimental_features_flags', [] ) );
+	}
+
+	/**
+	 * Normalize a stored option value to a list of flag slugs.
+	 *
+	 * @param mixed $value Option value.
+	 * @return array<int, string>
+	 */
+	private static function to_slugs( $value ): array {
+		return array_values( array_filter( (array) $value, 'is_string' ) );
 	}
 }
